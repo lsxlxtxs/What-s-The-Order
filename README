@@ -1,9 +1,15 @@
-Welcome to your Appcelerator Titanium Mobile Project
+Stetson University - Senior Project
+(Cross Platform Development through Appcelerator)
 
-This is a single window application with a single view - a mostly blank canvas. Requires Titanium Mobile SDK 1.8.0+
+Do2Learn.com web application ported on to the iPad and Android tablets
+ 
+Author: Laura Seletos
+Advisor: Dr. Branton
+
+Requires Titanium Mobile SDK 1.8.0+
 
 ----------------------------------
-Stuff our legal folk make us say:
+Titanium Appcelerator Copyright Statement:
 
 Appcelerator, Appcelerator Titanium and associated marks and logos are 
 trademarks of Appcelerator, Inc. 
