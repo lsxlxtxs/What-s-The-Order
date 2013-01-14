@@ -8,6 +8,11 @@
  *  
  */
 
+/*
+ * To Do:
+ * Add in touch gestures
+ * game play
+ */
 
 var playgame = {};
 
