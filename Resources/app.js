@@ -1,13 +1,17 @@
-Ti.include( 'gamemenu.js','playgame.js', 'gameinstructions.js','gameinformation.js');
+Ti.include( 'gameinformation.js','gameinstructions.js','gamemenu.js');
 
-/* 
+/* Main Splash Screen
  * 
  * Senior Project
  * Cross Platform 
  * Appcelerator
  * Do2Learn.com web application ported on to the iPad and Android tablets
+ * 
+ * Author: Laura Seletos
+ * Advisor: Dr. Branton
  *  
  */
+
 
 
 var win = Ti.UI.createWindow();
@@ -25,6 +29,7 @@ var l = Ti.UI.createLabel({
 });
 win.add(l);
 
+
 var b1 = Ti.UI.createButton({
 	title:'Play Game',
 	width:300,
@@ -34,6 +39,7 @@ var b1 = Ti.UI.createButton({
 b1.addEventListener('click', function()
 {
 	gamemenu.open();
+	win.close();
 });
 win.add(b1);
 
@@ -46,6 +52,8 @@ var b2 = Ti.UI.createButton({
 b2.addEventListener('click', function()
 {
 	gameinstructions.open();
+	win.close();
+
 });
 win.add(b2);
 
@@ -58,6 +66,8 @@ var b3 = Ti.UI.createButton({
 b3.addEventListener('click', function()
 {
 	gameinformation.open();
+	win.close();
+
 });
 win.add(b3);
 

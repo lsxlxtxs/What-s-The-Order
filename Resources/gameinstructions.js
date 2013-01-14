@@ -1,7 +1,16 @@
-gameinstructions = {};
+/* Game Instructions Page
+ * 
+ * Generates a window to display text for the game's instructions
+ * 
+ * Author: Laura Seletos
+ * Advisor: Dr. Branton
+ *  
+ */
 
-var win = Ti.UI.createWindow();
-	win.orientationModes = [Ti.UI.LANDSCAPE_LEFT,Ti.UI.LANDSCAPE_RIGHT];
+var gameinstructions = {};
+
+	gameinstructions = Ti.UI.createWindow();
+	gameinstructions.orientationModes = [Ti.UI.LANDSCAPE_LEFT,Ti.UI.LANDSCAPE_RIGHT];
 
 var l = Ti.UI.createLabel({
 	text:'Game Instructions Page', 
@@ -13,45 +22,18 @@ var l = Ti.UI.createLabel({
 	right:20,
 	top:10
 });
-win.add(l);
+gameinstructions.add(l);
 
 var b1 = Ti.UI.createButton({
-	title:'Play Game',
+	title:'Back to main screen',
 	width:300,
 	height:50,
 	top:100
 });
 b1.addEventListener('click', function()
 {
-	//MainTests.open();
+	gameinstructions.close();
+	win.open();
 });
-win.add(b1);
-
-var b2 = Ti.UI.createButton({
-	title:'View Instructions',
-	width:300,
-	height:50,
-	top:170
-});
-b2.addEventListener('click', function()
-{
-	//SplitViewPlain.open();
-});
-win.add(b2);
-
-var b3 = Ti.UI.createButton({
-	title:'View Game Information',
-	width:300,
-	height:50,
-	top:240
-});
-b3.addEventListener('click', function()
-{
-	//SplitViewNav.open();
-});
-win.add(b3);
-
-
-win.open();
-
+gameinstructions.add(b1);
 
