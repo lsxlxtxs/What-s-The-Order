@@ -1,44 +1,68 @@
-/*
- * Single Window Application Template:
- * A basic starting point for your application.  Mostly a blank canvas.
+Ti.include( 'gamemenu.js','playgame.js', 'gameinstructions.js','gameinformation.js');
+
+/* 
  * 
- * In app.js, we generally take care of a few things:
- * - Bootstrap the application with any data we need
- * - Check for dependencies like device type, platform version or network connection
- * - Require and open our top-level UI component
+ * Senior Project
+ * Cross Platform 
+ * Appcelerator
+ * Do2Learn.com web application ported on to the iPad and Android tablets
  *  
  */
 
-//bootstrap and check dependencies
-if (Ti.version < 1.8 ) {
-	alert('Sorry - this application template requires Titanium Mobile SDK 1.8 or later');	  	
-}
 
-// This is a single context application with mutliple windows in a stack
-(function() {
-	//determine platform and form factor and render approproate components
-	var osname = Ti.Platform.osname,
-		version = Ti.Platform.version,
-		height = Ti.Platform.displayCaps.platformHeight,
-		width = Ti.Platform.displayCaps.platformWidth;
-	
-	//considering tablet to have one dimension over 900px - this is imperfect, so you should feel free to decide
-	//yourself what you consider a tablet form factor for android
-	var isTablet = osname === 'ipad' || (osname === 'android' && (width > 899 || height > 899));
-	
-	var Window;
-	if (isTablet) {
-		Window = require('ui/tablet/ApplicationWindow');
-	}
-	else {
-		// Android uses platform-specific properties to create windows.
-		// All other platforms follow a similar UI pattern.
-		if (osname === 'android') {
-			Window = require('ui/handheld/android/ApplicationWindow');
-		}
-		else {
-			Window = require('ui/handheld/ApplicationWindow');
-		}
-	}
-	new Window().open();
-})();
+var win = Ti.UI.createWindow();
+	win.orientationModes = [Ti.UI.LANDSCAPE_LEFT,Ti.UI.LANDSCAPE_RIGHT];
+
+var l = Ti.UI.createLabel({
+	text:'Welcome to Whats The Order!', 
+	color:'#888',
+	font:{fontSize:20},
+	height:'auto',
+	width:'auto',
+	left:380,
+	right:20,
+	top:10
+});
+win.add(l);
+
+var b1 = Ti.UI.createButton({
+	title:'Play Game',
+	width:300,
+	height:50,
+	top:100
+});
+b1.addEventListener('click', function()
+{
+	gamemenu.open();
+});
+win.add(b1);
+
+var b2 = Ti.UI.createButton({
+	title:'View Instructions',
+	width:300,
+	height:50,
+	top:170
+});
+b2.addEventListener('click', function()
+{
+	gameinstructions.open();
+});
+win.add(b2);
+
+var b3 = Ti.UI.createButton({
+	title:'View Game Information',
+	width:300,
+	height:50,
+	top:240
+});
+b3.addEventListener('click', function()
+{
+	gameinformation.open();
+});
+win.add(b3);
+
+
+win.open();
+
+
+
