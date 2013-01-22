@@ -13,6 +13,7 @@ function FirstView() {
 		
 	});
 	self.add(label);
+	
 
 	
 	//Add behavior for UI

@@ -13,9 +13,13 @@ Ti.include( 'gameinformation.js','gameinstructions.js','gamemenu.js');
  */
 
 
-
 var win = Ti.UI.createWindow();
-	win.orientationModes = [Ti.UI.LANDSCAPE_LEFT,Ti.UI.LANDSCAPE_RIGHT];
+	win.orientationModes = [
+							Ti.UI.LANDSCAPE_LEFT,
+							Ti.UI.LANDSCAPE_RIGHT
+							];
+	win.UI.setBackgroundImage( '/What's The Order/Resources/android/droidbg.png' );
+
 
 var l = Ti.UI.createLabel({
 	text:'Welcome to Whats The Order!', 
@@ -28,6 +32,27 @@ var l = Ti.UI.createLabel({
 	top:10
 });
 win.add(l);
+
+		
+// User Input for Username
+var field = Ti.UI.createTextField({
+	top:5,
+	left:5,
+	right:90,
+	bottom:5,
+	width:120,
+	height:40,
+	borderStyle:Ti.UI.INPUT_BORDERSTYLE_ROUNDED
+});
+win.add(field);
+
+var button = Ti.UI.createButton({
+	right:5,
+	top:5,
+	width:80,
+	title:'Save'
+});
+win.add(button);
 
 
 var b1 = Ti.UI.createButton({
