@@ -43,7 +43,7 @@ var topBanner = Ti.UI.createImageView
 		height:'auto',
 		width:'auto',
 		top : 25,
-		left : 380
+		left : 359
 	});
 	topBanner.addEventListener('load', function() {
 	Ti.API.info('Image loaded!');
@@ -54,14 +54,27 @@ var topBanner = Ti.UI.createImageView
 														
 
 
+//Label for 'Player's Name:'
+var step2Label = Ti.UI.createLabel({
+	text:'Player Name:', 
+	color: '#FFFFFF',
+	font:{fontSize:17},
+	height:'auto',
+	width:'auto',
+	top:5,
+	left:25
+
+});
+//add label to window
+win.add(step2Label);
+
 
 		
 // User Input for Username
 var field = Ti.UI.createTextField({
 	color: '#000000',
-	top:5,
+	top:35,
 	left:20,
-	right:90,
 	bottom:5,
 	width:200,
 	height:40,
@@ -77,7 +90,7 @@ win.add(field);
 var button = Ti.UI.createButton({
 	color: '#000000',
 	left:225,
-	top:7,
+	top:37,
 	width:80,
 	title:'Save'
 });
@@ -127,15 +140,219 @@ win.add(advancedButton);
 
 
 
+//Label for 'Actions:'
+var actions = Ti.UI.createLabel({
+	text:'Actions:', 
+	color: '#000000',
+	font:{fontSize:17},
+	height:'auto',
+	width:'auto',
+	right:245,
+	top:257
+});
+//add label to window
+win.add(actions);
+
+
+
+//Label for 'A video shows...'
+var middleText1 = Ti.UI.createLabel({
+	text:'A video shows an action. The action is divided into 3 Steps. The', 
+	color: '#000000',
+	font:{fontSize:17},
+	height:'auto',
+	width:'auto',
+	left:155,
+	top:300
+});
+//add label to window
+win.add(middleText1);
+
+
+//Label for 'middle step is...'
+var middleText2 = Ti.UI.createLabel({
+	text:'middle step is placed on the screen and the player is asked to tell', 
+	color: '#000000',
+	font:{fontSize:17},
+	height:'auto',
+	width:'auto',
+	left:155,
+	top:320
+});
+//add label to window
+win.add(middleText2);
+
+
+//Label for 'what occured before...'
+var middleText3 = Ti.UI.createLabel({
+	text:'what occured before and after that step.', 
+	color: '#000000',
+	font:{fontSize:17},
+	height:'auto',
+	width:'auto',
+	left:155,
+	top:340
+});
+//add label to window
+win.add(middleText3);
+
+
+//Label for 'basic play'
+var basicPlayLabel = Ti.UI.createLabel({
+	text:'Basic Play:', 
+	color: '#000000',
+	font:{fontSize:17},
+	height:'auto',
+	width:'auto',
+	left:155,
+	top:380
+});
+//add label to window
+win.add(basicPlayLabel);
+
+
+//Label for 'Step 1: before'
+var step1Label = Ti.UI.createLabel({
+	text:'Step 1: before', 
+	color: '#000000',
+	font:{fontSize:17},
+	height:'auto',
+	width:'auto',
+	left:475,
+	top:400
+});
+//add label to window
+win.add(step1Label);
+
+
+//Label for 'Step 2: now'
+var step2Label = Ti.UI.createLabel({
+	text:'Step 2: now', 
+	color: '#000000',
+	font:{fontSize:17},
+	height:'auto',
+	width:'auto',
+	left:475,
+	top:420
+});
+//add label to window
+win.add(step2Label);
+
+
+//Label for 'Step 3: to finish'
+var step3Label = Ti.UI.createLabel({
+	text:'Step 3: to finish', 
+	color: '#000000',
+	font:{fontSize:17},
+	height:'auto',
+	width:'auto',
+	left:475,
+	top:440
+});
+//add label to window
+win.add(step3Label);
+
+
+//Label for 'Repeat Game:'
+var basicPlayLabel = Ti.UI.createLabel({
+	text:'Repeat Game:', 
+	color: '#000000',
+	font:{fontSize:17},
+	height:'auto',
+	width:'auto',
+	left:140,
+	top:567
+});
+//add label to window
+win.add(basicPlayLabel);
+
+
+
+//Label for 'Reward Screen:'
+var rewardScreenLabel = Ti.UI.createLabel({
+	text:'Reward Screen:', 
+	color: '#000000',
+	font:{fontSize:17},
+	height:'auto',
+	width:'auto',
+	left:140,
+	top:647
+});
+//add label to window
+win.add(rewardScreenLabel);
+
+
+
+//Label for 'Practice:'
+var practiceLabel = Ti.UI.createLabel({
+	text:'Practice:', 
+	color: '#000000',
+	font:{fontSize:17},
+	height:'auto',
+	width:'auto',
+	left:340,
+	top:567
+});
+//add label to window
+win.add(practiceLabel);
+
+
+
+//Label for 'Text:'
+var textLabel = Ti.UI.createLabel({
+	text:'Text:', 
+	color: '#000000',
+	font:{fontSize:17},
+	height:'auto',
+	width:'auto',
+	left:340,
+	top:647
+});
+//add label to window
+win.add(textLabel);
+
+
+//Label for 'Video:'
+var videoLabel = Ti.UI.createLabel({
+	text:'Video:', 
+	color: '#000000',
+	font:{fontSize:17},
+	height:'auto',
+	width:'auto',
+	left:540,
+	top:647
+});
+//add label to window
+win.add(videoLabel);
+
+
+
+//Label for 'Rounds per Game:'
+var roundsperGameLabel = Ti.UI.createLabel({
+	text:'Rounds per Game:', 
+	color: '#000000',
+	font:{fontSize:17},
+	height:'auto',
+	width:'auto',
+	left:540,
+	top:567
+});
+//add label to window
+win.add(roundsperGameLabel);
+
+
+
+
+
 //Creates button for Play Game
 //When clicked - opens gamemenu file
 var b1 = Ti.UI.createButton({
 	color: '#000000',
 	title:'Play Game',
-	width:175,
-	height:70,
-	top:640,
-	right:115
+	width:155,
+	height:50,
+	top:650,
+	right:125
 });
 //Adds click functionality to the play game function 
 b1.addEventListener('click', function()

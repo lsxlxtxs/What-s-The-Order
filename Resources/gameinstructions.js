@@ -28,6 +28,23 @@ var background = Ti.UI.createImageView
 
 
 
+// Create an ImageView.
+var topBanner = Ti.UI.createImageView
+	({
+		image : 'bannerpic.png',
+		height:'auto',
+		width:'auto',
+		top : 25,
+		left : 359
+	});
+	topBanner.addEventListener('load', function() {
+	Ti.API.info('Image loaded!');
+	});
+
+	// Add to the parent view.
+	gameinstructions.add(topBanner);
+
+
 
 var l = Ti.UI.createLabel({
 	text:'Game Instructions Page', 
@@ -42,10 +59,11 @@ var l = Ti.UI.createLabel({
 gameinstructions.add(l);
 
 var b1 = Ti.UI.createButton({
-	title:'Back to main screen',
-	width:300,
-	height:50,
-	top:100
+	title:'Back',
+	width:85,
+	height:35,
+	top:10,
+	right:10
 });
 b1.addEventListener('click', function()
 {

@@ -33,6 +33,22 @@ var gameScreenImg = Ti.UI.createImageView
 
 
 
+// Create an ImageView.
+var topBanner = Ti.UI.createImageView
+	({
+		image : 'bannerpic.png',
+		height:'auto',
+		width:'auto',
+		top : 25,
+		left : 359
+	});
+	topBanner.addEventListener('load', function() {
+	Ti.API.info('Image loaded!');
+	});
+
+	// Add to the parent view.
+	gamemenu.add(topBanner);
+
 
 var l = Ti.UI.createLabel({
 	text:'Game Menu Screen', 
