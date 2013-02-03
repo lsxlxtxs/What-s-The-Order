@@ -29,7 +29,7 @@ var background = Ti.UI.createImageView
 
 
 
-// Create an ImageView.
+// Create the banner image
 var topBanner = Ti.UI.createImageView
 	({
 		image : 'bannerpic.png',

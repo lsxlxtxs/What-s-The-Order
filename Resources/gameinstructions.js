@@ -28,7 +28,7 @@ var background = Ti.UI.createImageView
 
 
 
-// Create an ImageView.
+// Create the banner image
 var topBanner = Ti.UI.createImageView
 	({
 		image : 'bannerpic.png',
@@ -47,14 +47,14 @@ var topBanner = Ti.UI.createImageView
 
 
 var l = Ti.UI.createLabel({
-	text:'Game Instructions Page', 
-	color:'#888',
+	text:'Game Instructions Go Here', 
+	color:'#000000',
 	font:{fontSize:20},
 	height:'auto',
 	width:'auto',
-	left:380,
+	left:385,
 	right:20,
-	top:10
+	top:250
 });
 gameinstructions.add(l);
 
