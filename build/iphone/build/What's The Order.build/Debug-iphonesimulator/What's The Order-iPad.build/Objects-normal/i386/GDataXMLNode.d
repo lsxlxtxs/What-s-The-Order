@@ -1,6 +1,6 @@
 dependencies: \
-  /Users/lseletos/Documents/Titanium_Studio_Workspace/What's\ The\ Order/build/iphone/Classes/GDataXMLNode.m \
-  /Users/lseletos/Documents/Titanium_Studio_Workspace/What's\ The\ Order/build/iphone/Classes/GDataXMLNode.h \
+  /Users/lseletos/Documents/Titanium_Studio_Workspace/WhatsTheOrder/build/iphone/Classes/GDataXMLNode.m \
+  /Users/lseletos/Documents/Titanium_Studio_Workspace/WhatsTheOrder/build/iphone/Classes/GDataXMLNode.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.1.sdk/usr/include/libxml2/libxml/tree.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.1.sdk/usr/include/libxml2/libxml/xmlversion.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.1.sdk/usr/include/libxml2/libxml/xmlexports.h \

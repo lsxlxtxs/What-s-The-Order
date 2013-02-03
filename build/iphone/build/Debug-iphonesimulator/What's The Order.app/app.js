@@ -1,1 +1,1 @@
-/Users/lseletos/Documents/Titanium_Studio_Workspace/What's The Order/Resources/app.js
+/Users/lseletos/Documents/Titanium_Studio_Workspace/WhatsTheOrder/Resources/app.js

@@ -5,7 +5,7 @@ function ApplicationWindow() {
 		
 	//create component instance
 	var self = Ti.UI.createWindow({
-		backgroundColor:'#ffffff'
+		backgroundImage:'WhatsTheOrder/droidbg.png',
 	});
 		
 	//construct UI

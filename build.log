@@ -1,0 +1,12 @@
+Logfile initialized
+[INFO] logfile = /Users/lseletos/Documents/Titanium_Studio_Workspace/WhatsTheOrder/build.log
+[DEBUG] /Users/lseletos/Library/Application Support/Titanium/mobilesdk/osx/2.1.4.GA/android/builder.py install What's The Order /Users/lseletos/Documents/android-sdk-macosx /Users/lseletos/Documents/Titanium_Studio_Workspace/WhatsTheOrder com.stetson.whatstheorder 1
+[INFO] Titanium SDK version: 2.1.4 (11/09/12 12:46 51f2c64)
+[DEBUG] Waiting for device to be ready ...
+[TRACE] adb devices returned 0 devices/emulators
+[TRACE] adb devices returned 0 devices/emulators
+[TRACE] adb devices returned 0 devices/emulators
+[TRACE] adb devices returned 0 devices/emulators
+[TRACE] adb devices returned 0 devices/emulators
+[TRACE] adb devices returned 0 devices/emulators
+[ERROR] Timed out waiting for device to be ready, you may try reconnecting the USB cable

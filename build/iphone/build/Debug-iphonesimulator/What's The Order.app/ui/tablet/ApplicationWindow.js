@@ -1,1 +1,1 @@
-/Users/lseletos/Documents/Titanium_Studio_Workspace/What's The Order/Resources/ui/tablet/ApplicationWindow.js
+/Users/lseletos/Documents/Titanium_Studio_Workspace/WhatsTheOrder/Resources/ui/tablet/ApplicationWindow.js

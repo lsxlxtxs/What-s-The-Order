@@ -1,1 +1,1 @@
-/Users/lseletos/Documents/Titanium_Studio_Workspace/What's The Order/Resources/ui/common/FirstView.js
+/Users/lseletos/Documents/Titanium_Studio_Workspace/WhatsTheOrder/Resources/ui/common/FirstView.js
