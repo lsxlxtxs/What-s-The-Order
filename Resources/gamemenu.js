@@ -10,10 +10,29 @@
  *  
  */
 
-var gamemenu = {};
-
-	gamemenu = Ti.UI.createWindow();
+	//creates game menu window
+	var gamemenu = Ti.UI.createWindow
+	({
+		//sets bg boarder to gray
+		backgroundColor: '#333333'
+	});
+	
+	//sets orentation to landscape
 	gamemenu.orientationModes = [Ti.UI.LANDSCAPE_LEFT,Ti.UI.LANDSCAPE_RIGHT];
+
+
+
+//Creates background image on game menu screen						
+var gameScreenImg = Ti.UI.createImageView
+	({
+ 		 image:'gamescreen.png'
+	});
+	
+	//Adds in the background image on main screen						
+	gamemenu.add(gameScreenImg);
+
+
+
 
 var l = Ti.UI.createLabel({
 	text:'Game Menu Screen', 

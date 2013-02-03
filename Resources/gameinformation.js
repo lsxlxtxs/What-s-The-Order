@@ -7,10 +7,26 @@
  *  
  */
 
-var gameinformation = {};
-
-	gameinformation = Ti.UI.createWindow();
+//creates information window
+var gameinformation = Ti.UI.createWindow
+	({
+		//sets bg boarder to gray
+		backgroundColor: '#333333'
+	});
+	
+	//sets orentation to landscape
 	gameinformation.orientationModes = [Ti.UI.LANDSCAPE_LEFT,Ti.UI.LANDSCAPE_RIGHT];
+	
+	
+//Creates background image on game instructions screen						
+var background = Ti.UI.createImageView
+	({
+ 		 image:'gameinfobg.png'
+	});
+	
+	//Adds in the background image on main screen						
+	gameinformation.add(background);
+
 
 var l = Ti.UI.createLabel({
 	text:'Game Information Page', 

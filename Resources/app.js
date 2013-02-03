@@ -85,6 +85,48 @@ var button = Ti.UI.createButton({
 win.add(button);
 
 
+//Creates button for switching to Linear Time
+var linearbutton = Ti.UI.createButton({
+	color: '#000000',
+	left:130,
+	top:210,
+	width:115,
+	height:30,
+	title:'Linear Time'
+});
+//Adds save button to view
+win.add(linearbutton);
+
+
+
+//Creates button for switching to Relative Time
+var relativebutton = Ti.UI.createButton({
+	color: '#000000',
+	left:255,
+	top:210,
+	width:115,
+	height:30,
+	title:'Relative Time'
+});
+//Adds save button to view
+win.add(relativebutton);
+
+
+
+//Creates button for switching to advanced options button
+var advancedButton = Ti.UI.createButton({
+	color: '#000000',
+	left:470,
+	top:480,
+	width:165,
+	height:30,
+	title:'Advanced Options'
+});
+//Adds save button to view
+win.add(advancedButton);
+
+
+
 //Creates button for Play Game
 //When clicked - opens gamemenu file
 var b1 = Ti.UI.createButton({
