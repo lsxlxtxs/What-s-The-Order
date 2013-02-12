@@ -418,3 +418,108 @@ win.open();
 
 
 
+
+
+
+//Add in custom radio buttons
+//Adapted from tutorial
+//Source at: https://github.com/Lukic/TiRadioButtonGroup
+(function() {
+		
+	//for horizontal buttons
+	var radioButtonRepeatGame = require('ui/tiRadioButtonREPEATGAME');
+	
+	//for verdical buttons
+	var radioButtonActions	= require('ui/tiRadioButtonVerdicalACTIONS');
+	
+	//for verdical buttons
+	var radioButtonRPG	= require('ui/tiRadioButtonRPG');
+
+		
+
+		//Radio Button = Repeat Game
+			var radioGroupRepeatGame = radioButtonRepeatGame.createGroup({
+			groupId:1,
+			width:700,
+			height:800,
+			layout:'horizontal',
+			radioItemsValue:['One', 'Two'],
+			radioItemsPadding:35,
+			radioItemsBackgroundSelectedImage:'radioButtonActive.png',
+			radioItemsBackgroundImage:'radioButton.png',
+			radioItemsWidth:23,
+			radioItemsHeight:24
+			});
+			var textRepeatGameYes = Ti.UI.createLabel({
+			text:'Yes',
+			color:'#fff',
+			font:{fontSize:20,fontWeight:'Bold'},
+			shadowColor:'#000',
+			shadowOffset:{x:1,y:1},
+			top:10,
+			textAlign:'center'
+			});	
+			var textRepeatGameNo = Ti.UI.createLabel({
+			text:'No',
+			color:'#fff',
+			font:{fontSize:20,fontWeight:'Bold'},
+			shadowColor:'#000',
+			shadowOffset:{x:1,y:1},
+			top:10,
+			textAlign:'center'
+			});
+			win.add(radioGroupRepeatGame);
+			win.add(textRepeatGameYes);
+			win.add(textRepeatGameNo);
+	
+		//Radio Button = Rounds per Game
+			var radioGroupRoundsPerGame = radioButtonRPG.createGroup({
+			groupId:1,
+			width:509,
+			height:34,
+			layout:'horizontal',
+			radioItemsValue:['One', 'Two', 'Three', 'Four', 'Five', 'Six', 'Seven','Eight'],
+			radioItemsPadding:25,
+			radioItemsBackgroundSelectedImage:'radioButtonActive.png',
+			radioItemsBackgroundImage:'radioButton.png',
+			radioItemsWidth:18,
+			radioItemsHeight:19
+			});
+			win.add(radioGroupRoundsPerGame);
+
+	
+		//Radio Button = ACTIONS 
+			var radioGroupActions = radioButtonActions.createGroup({
+			groupId:1,
+			width:34,
+			height:650,
+			layout:'vertical',
+			radioItemsValue:['One', 'Two', 'Three', 'Four', 'Five', 'Six', 'Seven','Eight','Nine','Ten'],
+			radioItemsPadding:7,
+			radioItemsBackgroundSelectedImage:'radioButtonActive.png',
+			radioItemsBackgroundImage:'radioButton.png',
+			radioItemsWidth:18,
+			radioItemsHeight:19
+			});	
+			win.add(radioGroupActions);
+
+	
+	
+	var button = Ti.UI.createButton({
+		title:'Get value'
+	});
+	
+	button.addEventListener('singletap', function(e) {
+    		alert("Horizontal radio group: " + radioGroup.selectedValue + "\n Vertical radio group: " + radioGroup2.selectedValue);
+		});
+	
+	
+
+	
+	win.add(button);
+	win.open();
+
+})();
+
+
+
