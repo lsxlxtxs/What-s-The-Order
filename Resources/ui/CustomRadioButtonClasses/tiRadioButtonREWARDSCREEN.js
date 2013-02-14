@@ -1,3 +1,6 @@
+//Parent Class for Rewards Radio Buttons
+//Adapted from: https://github.com/Lukic/TiRadioButtonGroup
+
 exports.createGroup = function(arg) {
 	
 	//// Main object that will be returned when createGroup is called.
@@ -6,8 +9,8 @@ exports.createGroup = function(arg) {
 		height:arg.height,
 		groupId: arg.groupId,
 		layout:'horizontal',
-		top:596,
-		right:-56
+		top:676,
+		left:158
 	});
 
 	//// Looping through radio buttons that will be created inside the radioGroup. 

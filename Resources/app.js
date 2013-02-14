@@ -14,6 +14,8 @@ Ti.include( 'gameinformation.js','gameinstructions.js','gamemenu.js');
  */
 
 
+var isButtonClicked = '';
+
 //Creates the window and sets the orientation to landscape
 var win = Ti.UI.createWindow
 	({
@@ -413,10 +415,6 @@ b3.addEventListener('click', function()
 //Adds information button to view
 win.add(b3);
 
-//opens up the main/current window in viewer
-win.open();
-
-
 
 
 
@@ -426,73 +424,183 @@ win.open();
 //Source at: https://github.com/Lukic/TiRadioButtonGroup
 (function() {
 		
-	//for horizontal buttons
-	var radioButtonRepeatGame = require('ui/tiRadioButtonREPEATGAME');
+	//for repeat radio buttons
+	var radioButtonRepeatGame = require('ui/CustomRadioButtonClasses/tiRadioButtonREPEATGAME');
 	
-	//for verdical buttons
-	var radioButtonActions	= require('ui/tiRadioButtonVerdicalACTIONS');
+	//for actions radio buttons
+	var radioButtonActions	= require('ui/CustomRadioButtonClasses/tiRadioButtonVerdicalACTIONS');
 	
-	//for verdical buttons
-	var radioButtonRPG	= require('ui/tiRadioButtonRPG');
+	//for rounds per game radio buttons
+	var radioButtonRPG	= require('ui/CustomRadioButtonClasses/tiRadioButtonRPG');
+	
+	//for before/earlier radio buttons
+	var radioButtonBeforeEarlier = require('ui/CustomRadioButtonClasses/tiRadioButtonBEFOREEARLIER');
+	
+	//for practice radio buttons
+	var radioButtonPractice	= require('ui/CustomRadioButtonClasses/tiRadioButtonPRACTICE');
+	
+	//for rewards radio buttons
+	var radioButtonRewards	= require('ui/CustomRadioButtonClasses/tiRadioButtonREWARDSCREEN');
+	
+	//for text radio buttons
+	var radioButtonText	= require('ui/CustomRadioButtonClasses/tiRadioButtonTEXT');
+	
+	//for video radio buttons
+	var radioButtonVideo = require('ui/CustomRadioButtonClasses/tiRadioButtonVIDEO');
+	
+	//for Advanced radio buttons
+	var radioButtonAdvanced = require('ui/CustomRadioButtonClasses/tiRadioButtonAdvanced');
 
-		
+
+
+
 
 		//Radio Button = Repeat Game
 			var radioGroupRepeatGame = radioButtonRepeatGame.createGroup({
 			groupId:1,
-			width:700,
-			height:800,
+			width:126,
+			height:64,
 			layout:'horizontal',
 			radioItemsValue:['One', 'Two'],
-			radioItemsPadding:35,
-			radioItemsBackgroundSelectedImage:'radioButtonActive.png',
-			radioItemsBackgroundImage:'radioButton.png',
-			radioItemsWidth:23,
-			radioItemsHeight:24
-			});
-			var textRepeatGameYes = Ti.UI.createLabel({
-			text:'Yes',
-			color:'#fff',
-			font:{fontSize:20,fontWeight:'Bold'},
-			shadowColor:'#000',
-			shadowOffset:{x:1,y:1},
-			top:10,
-			textAlign:'center'
-			});	
-			var textRepeatGameNo = Ti.UI.createLabel({
-			text:'No',
-			color:'#fff',
-			font:{fontSize:20,fontWeight:'Bold'},
-			shadowColor:'#000',
-			shadowOffset:{x:1,y:1},
-			top:10,
-			textAlign:'center'
-			});
-			win.add(radioGroupRepeatGame);
-			win.add(textRepeatGameYes);
-			win.add(textRepeatGameNo);
-	
-		//Radio Button = Rounds per Game
-			var radioGroupRoundsPerGame = radioButtonRPG.createGroup({
-			groupId:1,
-			width:509,
-			height:34,
-			layout:'horizontal',
-			radioItemsValue:['One', 'Two', 'Three', 'Four', 'Five', 'Six', 'Seven','Eight'],
-			radioItemsPadding:25,
+			radioItemsPadding:45,
 			radioItemsBackgroundSelectedImage:'radioButtonActive.png',
 			radioItemsBackgroundImage:'radioButton.png',
 			radioItemsWidth:18,
 			radioItemsHeight:19
 			});
-			win.add(radioGroupRoundsPerGame);
-
+			//Labels
+				var labelYesRepeatGame = Ti.UI.createLabel({
+				text:'Yes', 
+				color: '#000000',
+				font:{fontSize:17},
+				height:'auto',
+				width:'auto',
+				top:592,
+				left:181
+				});
+				var labelNoRepeatGame = Ti.UI.createLabel({
+				text:'No', 
+				color: '#000000',
+				font:{fontSize:17},
+				height:'auto',
+				width:'auto',
+				top:592,
+				left:245
+				});
+				//add label to window
+					win.add(radioGroupRepeatGame);
+					win.add(labelYesRepeatGame);
+					win.add(labelNoRepeatGame);
 	
+		//Radio Button = Rounds per Game
+			var radioGroupRoundsPerGame = radioButtonRPG.createGroup({
+			groupId:2,
+			width:330,
+			height:34,
+			layout:'horizontal',
+			radioItemsValue:['One', 'Two', 'Three', 'Four', 'Five', 'Six', 'Seven','Eight'],
+			radioItemsPadding:23,
+			radioItemsBackgroundSelectedImage:'radioButtonActive.png',
+			radioItemsBackgroundImage:'radioButton.png',
+			radioItemsWidth:18,
+			radioItemsHeight:19
+			});
+			//Labels
+				var labelRPG1 = Ti.UI.createLabel({
+				text:'1', 
+				color: '#000000',
+				font:{fontSize:20},
+				height:'auto',
+				width:'auto',
+				top:592,
+				right:424
+				});
+				var labelRPG2 = Ti.UI.createLabel({
+				text:'2', 
+				color: '#000000',
+				font:{fontSize:20},
+				height:'auto',
+				width:'auto',
+				top:592,
+				right:381
+				});
+				var labelRPG3 = Ti.UI.createLabel({
+				text:'3', 
+				color: '#000000',
+				font:{fontSize:20},
+				height:'auto',
+				width:'auto',
+				top:592,
+				right:340
+				});
+				var labelRPG4 = Ti.UI.createLabel({
+				text:'4', 
+				color: '#000000',
+				font:{fontSize:20},
+				height:'auto',
+				width:'auto',
+				top:592,
+				right:301
+				});
+				var labelRPG5 = Ti.UI.createLabel({
+				text:'5', 
+				color: '#000000',
+				font:{fontSize:20},
+				height:'auto',
+				width:'auto',
+				top:592,
+				right:260
+				});
+				var labelRPG6 = Ti.UI.createLabel({
+				text:'6', 
+				color: '#000000',
+				font:{fontSize:20},
+				height:'auto',
+				width:'auto',
+				top:592,
+				right:217
+				});
+				var labelRPG7 = Ti.UI.createLabel({
+				text:'7', 
+				color: '#000000',
+				font:{fontSize:20},
+				height:'auto',
+				width:'auto',
+				top:592,
+				right:176
+				});
+				var labelRPG8 = Ti.UI.createLabel({
+				text:'8', 
+				color: '#000000',
+				font:{fontSize:20},
+				height:'auto',
+				width:'auto',
+				top:592,
+				right:136
+				});
+				radioGroupRoundsPerGame.addEventListener('load', function() 
+				{
+					var value = radioGroupRoundsPerGame.radioItemsValue[radioGroupRoundsPerGame.id];
+					Ti.API.info(value);
+
+				});
+					win.add(radioGroupRoundsPerGame);
+					win.add(labelRPG1);
+					win.add(labelRPG2);
+					win.add(labelRPG3);
+					win.add(labelRPG4);
+					win.add(labelRPG5);
+					win.add(labelRPG6);
+					win.add(labelRPG7);
+					win.add(labelRPG8);
+
+
+
 		//Radio Button = ACTIONS 
 			var radioGroupActions = radioButtonActions.createGroup({
-			groupId:1,
+			groupId:3,
 			width:34,
-			height:650,
+			height:260,
 			layout:'vertical',
 			radioItemsValue:['One', 'Two', 'Three', 'Four', 'Five', 'Six', 'Seven','Eight','Nine','Ten'],
 			radioItemsPadding:7,
@@ -501,22 +609,341 @@ win.open();
 			radioItemsWidth:18,
 			radioItemsHeight:19
 			});	
-			win.add(radioGroupActions);
+			//Labels
+				var labelActionsSocks = Ti.UI.createLabel({
+				text:'Putting on socks', 
+				color: '#000000',
+				font:{fontSize:18},
+				height:'auto',
+				width:'auto',
+				top:283,
+				left:744
+				});
+				var labelActionsPaper = Ti.UI.createLabel({
+				text:'Cutting paper', 
+				color: '#000000',
+				font:{fontSize:18},
+				height:'auto',
+				width:'auto',
+				top:309,
+				left:744
+				});
+				var labelActionsDrink = Ti.UI.createLabel({
+				text:'Drinking', 
+				color: '#000000',
+				font:{fontSize:18},
+				height:'auto',
+				width:'auto',
+				top:335,
+				left:744
+				});
+				var labelActionsBlow = Ti.UI.createLabel({
+				text:'Blow up a balloon', 
+				color: '#000000',
+				font:{fontSize:18},
+				height:'auto',
+				width:'auto',
+				top:361,
+				left:744
+				});
+				var labelActionsDot = Ti.UI.createLabel({
+				text:'Dot-to-dot', 
+				color: '#000000',
+				font:{fontSize:18},
+				height:'auto',
+				width:'auto',
+				top:387,
+				left:744
+				});
+				var labelActionsEating = Ti.UI.createLabel({
+				text:'Eating a bannana', 
+				color: '#000000',
+				font:{fontSize:18},
+				height:'auto',
+				width:'auto',
+				top:413,
+				left:744
+				});
+				var labelActionsCoat = Ti.UI.createLabel({
+				text:'Putting on a coat', 
+				color: '#000000',
+				font:{fontSize:18},
+				height:'auto',
+				width:'auto',
+				top:439,
+				left:744
+				});
+				var labelActionsBlowing = Ti.UI.createLabel({
+				text:'Blowing bubbles', 
+				color: '#000000',
+				font:{fontSize:18},
+				height:'auto',
+				width:'auto',
+				top:465,
+				left:744
+				});
+				var labelActionsMaking = Ti.UI.createLabel({
+				text:'Making a sandwich', 
+				color: '#000000',
+				font:{fontSize:18},
+				height:'auto',
+				width:'auto',
+				top:491,
+				left:744
+				});
+				var labelActionsBlocks = Ti.UI.createLabel({
+				text:'Using blocks', 
+				color: '#000000',
+				font:{fontSize:18},
+				height:'auto',
+				width:'auto',
+				top:517,
+				left:744
+				});
+					win.add(radioGroupActions);
+					win.add(labelActionsSocks);
+					win.add(labelActionsPaper);
+					win.add(labelActionsDrink);
+					win.add(labelActionsBlow);			
+					win.add(labelActionsDot);
+					win.add(labelActionsEating);			
+					win.add(labelActionsCoat);
+					win.add(labelActionsBlowing);			
+					win.add(labelActionsMaking);
+					win.add(labelActionsBlocks);
+
+		//Radio Button = Text 
+			var radioGroupText = radioButtonText.createGroup({
+			groupId:4,
+			width:126,
+			height:64,
+			layout:'horizontal',
+			radioItemsValue:['Yes', 'No'],
+			radioItemsPadding:45,
+			radioItemsBackgroundSelectedImage:'radioButtonActive.png',
+			radioItemsBackgroundImage:'radioButton.png',
+			radioItemsWidth:18,
+			radioItemsHeight:19
+			});	
+			//Labels
+				var labelYesText = Ti.UI.createLabel({
+				text:'Yes', 
+				color: '#000000',
+				font:{fontSize:17},
+				height:'auto',
+				width:'auto',
+				top:672,
+				left:388
+				});
+				var labelNoText = Ti.UI.createLabel({
+				text:'No', 
+				color: '#000000',
+				font:{fontSize:17},
+				height:'auto',
+				width:'auto',
+				top:672,
+				left:452
+				});
+					win.add(radioGroupText);
+					win.add(labelYesText);
+					win.add(labelNoText);
+			
+			
+			//Radio Button = Video 
+			var radioGroupVideo = radioButtonVideo.createGroup({
+			groupId:5,
+			width:126,
+			height:64,
+			layout:'horizontal',
+			radioItemsValue:['Yes', 'No'],
+			radioItemsPadding:45,
+			radioItemsBackgroundSelectedImage:'radioButtonActive.png',
+			radioItemsBackgroundImage:'radioButton.png',
+			radioItemsWidth:18,
+			radioItemsHeight:19
+			});	
+			//Labels
+				var labelYesVideo = Ti.UI.createLabel({
+				text:'Yes', 
+				color: '#000000',
+				font:{fontSize:17},
+				height:'auto',
+				width:'auto',
+				top:672,
+				left:592
+				});
+				var labelNoVideo = Ti.UI.createLabel({
+				text:'No', 
+				color: '#000000',
+				font:{fontSize:17},
+				height:'auto',
+				width:'auto',
+				top:672,
+				left:656
+				});
+					win.add(radioGroupVideo);
+					win.add(labelYesVideo);
+					win.add(labelNoVideo);
+			
+			
+			//Radio Button = Rewards 
+			var radioGroupRewards = radioButtonRewards.createGroup({
+			groupId:6,
+			width:126,
+			height:64,
+			layout:'horizontal',
+			radioItemsValue:['Yes', 'No'],
+			radioItemsPadding:45,
+			radioItemsBackgroundSelectedImage:'radioButtonActive.png',
+			radioItemsBackgroundImage:'radioButton.png',
+			radioItemsWidth:18,
+			radioItemsHeight:19
+			});	
+			//Labels
+				var labelYesReward = Ti.UI.createLabel({
+				text:'Yes', 
+				color: '#000000',
+				font:{fontSize:17},
+				height:'auto',
+				width:'auto',
+				top:672,
+				left:181
+				});
+				var labelNoReward = Ti.UI.createLabel({
+				text:'No', 
+				color: '#000000',
+				font:{fontSize:17},
+				height:'auto',
+				width:'auto',
+				top:672,
+				left:245
+				});
+					win.add(radioGroupRewards);
+					win.add(labelYesReward);
+					win.add(labelNoReward);
+			
+			
+			//Radio Button = Practice 
+			var radioGroupPractice = radioButtonPractice.createGroup({
+			groupId:7,
+			width:126,
+			height:64,
+			layout:'horizontal',
+			radioItemsValue:['Yes', 'No'],
+			radioItemsPadding:45,
+			radioItemsBackgroundSelectedImage:'radioButtonActive.png',
+			radioItemsBackgroundImage:'radioButton.png',
+			radioItemsWidth:18,
+			radioItemsHeight:19
+			});	
+			//Labels
+				var labelYesPractice = Ti.UI.createLabel({
+				text:'Yes', 
+				color: '#000000',
+				font:{fontSize:17},
+				height:'auto',
+				width:'auto',
+				top:592,
+				left:388
+				});
+				var labelNoPractice = Ti.UI.createLabel({
+				text:'No', 
+				color: '#000000',
+				font:{fontSize:17},
+				height:'auto',
+				width:'auto',
+				top:592,
+				left:452
+				});
+					win.add(radioGroupPractice);
+					win.add(labelYesPractice);
+					win.add(labelNoPractice);
+			
+			
+			//Radio Button = Before & Earlier 
+			var radioGroupBeforeEarlier = radioButtonBeforeEarlier.createGroup({
+			groupId:8,
+			width:20,
+			height:83,
+			layout:'vertical',
+			radioItemsValue:['Before', 'Earlier'],
+			radioItemsPadding:15,
+			radioItemsBackgroundSelectedImage:'radioButtonActive.png',
+			radioItemsBackgroundImage:'radioButton.png',
+			radioItemsWidth:18,
+			radioItemsHeight:19
+			});	
+			radioGroupBeforeEarlier.addEventListener('load', function() 
+			{
+				Ti.API.info('Before/Earlier: Option Clicked!');
+				//isButtonClicked = 'BeforeEarlier';
+			});
+			//Labels
+				var labelYesBeforeEarlier = Ti.UI.createLabel({
+				text:'before/after', 
+				color: '#000000',
+				font:{fontSize:17},
+				height:'auto',
+				width:'auto',
+				left:181,
+				top:406
+				});
+				var labelNoBeforeEarlier = Ti.UI.createLabel({
+				text:'earlier/later', 
+				color: '#000000',
+				font:{fontSize:17},
+				height:'auto',
+				width:'auto',
+				left:181,
+				top:440
+				});
+					win.add(radioGroupBeforeEarlier);
+					win.add(labelYesBeforeEarlier);
+					win.add(labelNoBeforeEarlier);
+	
+	
+	
+
+				//Radio Button = Advanced
+			var radioGroupAdvanced = radioButtonAdvanced.createGroup({
+			groupId:9,
+			width:20,
+			height:83,
+			layout:'vertical',
+			radioItemsValue:['On'],
+			radioItemsPadding:15,
+			radioItemsBackgroundSelectedImage:'radioButtonActive.png',
+			radioItemsBackgroundImage:'radioButton.png',
+			radioItemsWidth:18,
+			radioItemsHeight:19
+			});	
+			radioGroupAdvanced.addEventListener('load', function() 
+			{
+				Ti.API.info('Advanced: Option Clicked!');
+				//isButtonClicked = 'Advanced';
+
+			});
+			//Labels
+				var labelAdvanced = Ti.UI.createLabel({
+				text:'Advanced', 
+				color: '#000000',
+				font:{fontSize:17},
+				height:'auto',
+				width:'auto',
+				left:496,
+				top:376,
+				});
+					win.add(radioGroupAdvanced);
+					win.add(labelAdvanced);
+					
+	
+	
+		 
+	console.log("number pf rounds: " + radioGroupRoundsPerGame.selectedValue);	
+	//console.log("button clicked: " + isButtonClicked);	
 
 	
-	
-	var button = Ti.UI.createButton({
-		title:'Get value'
-	});
-	
-	button.addEventListener('singletap', function(e) {
-    		alert("Horizontal radio group: " + radioGroup.selectedValue + "\n Vertical radio group: " + radioGroup2.selectedValue);
-		});
-	
-	
-
-	
-	win.add(button);
+ 	//opens up the main/current window in viewer
 	win.open();
 
 })();

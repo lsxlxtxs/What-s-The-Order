@@ -1,3 +1,6 @@
+//Parent Class for Practice Radio Buttons
+//Adapted from: https://github.com/Lukic/TiRadioButtonGroup
+
 exports.createGroup = function(arg) {
 	
 	//// Main object that will be returned when createGroup is called.
@@ -7,7 +10,7 @@ exports.createGroup = function(arg) {
 		groupId: arg.groupId,
 		layout:'horizontal',
 		top:596,
-		left:180
+		left:364
 	});
 
 	//// Looping through radio buttons that will be created inside the radioGroup. 

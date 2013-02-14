@@ -1,3 +1,7 @@
+//Parent Class for Rounds per Game Radio Buttons
+//Adapted from: https://github.com/Lukic/TiRadioButtonGroup
+
+
 exports.createGroup = function(arg) {
 	
 	//// Main object that will be returned when createGroup is called.
@@ -5,9 +9,10 @@ exports.createGroup = function(arg) {
 		width:arg.width,
 		height:arg.height,
 		groupId: arg.groupId,
+		radioItemsValue: arg.radioItemsValue,
 		layout:'horizontal',
-		top:285,
-		right:270
+		top:596,
+		right:129
 	});
 
 	//// Looping through radio buttons that will be created inside the radioGroup. 
