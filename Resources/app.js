@@ -13,6 +13,17 @@ Ti.include( 'gameinformation.js','gameinstructions.js','gamemenu.js');
  *  
  */
 
+/* Game Menu Screen
+ * 
+ * Generates a window to display the pre-game playing
+ * options. This page will allow users to customize 
+ * their game play. The play game button is on this
+ * page.
+ * 
+ * Author: Laura Seletos
+ * Advisor: Dr. Branton
+ *  
+ */
 
 var isButtonClicked = '';
 
@@ -46,9 +57,6 @@ var topBanner = Ti.UI.createImageView
 		width:'auto',
 		top : 25,
 		left : 359
-	});
-	topBanner.addEventListener('load', function() {
-	Ti.API.info('Image loaded!');
 	});
 
 	// Add to the parent view.
@@ -580,8 +588,8 @@ win.add(b3);
 				});
 				radioGroupRoundsPerGame.addEventListener('load', function() 
 				{
-					var value = radioGroupRoundsPerGame.radioItemsValue[radioGroupRoundsPerGame.id];
-					Ti.API.info(value);
+					// console.log("MAIN selected id: ");
+					// console.log(radioGroupRoundsPerGame.selectedValue);
 
 				});
 					win.add(radioGroupRoundsPerGame);
@@ -875,8 +883,7 @@ win.add(b3);
 			});	
 			radioGroupBeforeEarlier.addEventListener('load', function() 
 			{
-				Ti.API.info('Before/Earlier: Option Clicked!');
-				//isButtonClicked = 'BeforeEarlier';
+
 			});
 			//Labels
 				var labelYesBeforeEarlier = Ti.UI.createLabel({
@@ -919,8 +926,6 @@ win.add(b3);
 			});	
 			radioGroupAdvanced.addEventListener('load', function() 
 			{
-				Ti.API.info('Advanced: Option Clicked!');
-				//isButtonClicked = 'Advanced';
 
 			});
 			//Labels
@@ -935,14 +940,8 @@ win.add(b3);
 				});
 					win.add(radioGroupAdvanced);
 					win.add(labelAdvanced);
+						
 					
-	
-	
-		 
-	console.log("number pf rounds: " + radioGroupRoundsPerGame.selectedValue);	
-	//console.log("button clicked: " + isButtonClicked);	
-
-	
  	//opens up the main/current window in viewer
 	win.open();
 

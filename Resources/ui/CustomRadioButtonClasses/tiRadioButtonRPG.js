@@ -9,6 +9,7 @@ exports.createGroup = function(arg) {
 		width:arg.width,
 		height:arg.height,
 		groupId: arg.groupId,
+		//create variable for value
 		radioItemsValue: arg.radioItemsValue,
 		layout:'horizontal',
 		top:596,
@@ -25,6 +26,7 @@ exports.createGroup = function(arg) {
 			left:0,
 			id:i
 		});	
+		
 	
 		//// Adding left padding/margin/spacing radio items. Ofc. not the first one ;) 
 		if(i!=0 && arg.layout ==='horizontal')
@@ -35,6 +37,13 @@ exports.createGroup = function(arg) {
 		{
 			radioItem.setTop(arg.radioItemsPadding);
 		}
+		
+		//getting the id from the individual radio button
+			console.log("radioItem[id]: ");
+			console.log(radioItem.id);
+			
+  			//var radioButtonValue = radioItem.id;
+		
 		
 		//// Adding singletap event that will chnage background image on the selected radio item.
 		radioItem.addEventListener('singletap', function(e) {
