@@ -24,42 +24,26 @@ dependencies: \
   /Users/lseletos/Documents/Titanium_Studio_Workspace/WhatsTheOrder/build/iphone/Classes/TiBuffer.h \
   /Users/lseletos/Documents/Titanium_Studio_Workspace/WhatsTheOrder/build/iphone/Classes/TiBlob.h \
   /Users/lseletos/Documents/Titanium_Studio_Workspace/WhatsTheOrder/build/iphone/Classes/TiUIAlertDialogProxy.h \
-  /Users/lseletos/Documents/Titanium_Studio_Workspace/WhatsTheOrder/build/iphone/Classes/Ti2DMatrix.h \
-  /Users/lseletos/Documents/Titanium_Studio_Workspace/WhatsTheOrder/build/iphone/Classes/Ti3DMatrix.h \
-  /Users/lseletos/Documents/Titanium_Studio_Workspace/WhatsTheOrder/build/iphone/Classes/TiAnimation.h \
-  /Users/lseletos/Documents/Titanium_Studio_Workspace/WhatsTheOrder/build/iphone/Classes/TiPoint.h \
-  /Users/lseletos/Documents/Titanium_Studio_Workspace/WhatsTheOrder/build/iphone/Classes/ListenerEntry.h \
-  /Users/lseletos/Documents/Titanium_Studio_Workspace/WhatsTheOrder/build/iphone/Classes/LayoutConstraint.h \
-  /Users/lseletos/Documents/Titanium_Studio_Workspace/WhatsTheOrder/build/iphone/Classes/TiUIiPhoneProxy.h \
-  /Users/lseletos/Documents/Titanium_Studio_Workspace/WhatsTheOrder/build/iphone/Classes/TiUIiPadProxy.h \
-  /Users/lseletos/Documents/Titanium_Studio_Workspace/WhatsTheOrder/build/iphone/Classes/TiUIiPadPopoverProxy.h \
-  /Users/lseletos/Documents/Titanium_Studio_Workspace/WhatsTheOrder/build/iphone/Classes/TiViewProxy.h \
-  /Users/lseletos/Documents/Titanium_Studio_Workspace/WhatsTheOrder/build/iphone/Classes/TiUIView.h \
-  /Users/lseletos/Documents/Titanium_Studio_Workspace/WhatsTheOrder/build/iphone/Classes/TiGradient.h \
-  /Users/lseletos/Documents/Titanium_Studio_Workspace/WhatsTheOrder/build/iphone/Classes/TiRect.h \
-  /Users/lseletos/Documents/Titanium_Studio_Workspace/WhatsTheOrder/build/iphone/Classes/TiViewController.h \
-  /Users/lseletos/Documents/Titanium_Studio_Workspace/WhatsTheOrder/build/iphone/Classes/TiUIiPadSplitWindowProxy.h \
-  /Users/lseletos/Documents/Titanium_Studio_Workspace/WhatsTheOrder/build/iphone/Classes/TiWindowProxy.h \
-  /Users/lseletos/Documents/Titanium_Studio_Workspace/WhatsTheOrder/build/iphone/Classes/TiTab.h \
-  /Users/lseletos/Documents/Titanium_Studio_Workspace/WhatsTheOrder/build/iphone/Classes/TiTabGroup.h \
-  /Users/lseletos/Documents/Titanium_Studio_Workspace/WhatsTheOrder/build/iphone/Classes/TiUIWindow.h \
-  /Users/lseletos/Documents/Titanium_Studio_Workspace/WhatsTheOrder/build/iphone/Classes/TiUIiPadDocumentViewerProxy.h \
-  /Users/lseletos/Documents/Titanium_Studio_Workspace/WhatsTheOrder/build/iphone/Classes/TiUIiOSProxy.h \
-  /Users/lseletos/Documents/Titanium_Studio_Workspace/WhatsTheOrder/build/iphone/Classes/TiUIiOSAdViewProxy.h \
-  /Users/lseletos/Documents/Titanium_Studio_Workspace/WhatsTheOrder/build/iphone/Classes/TiUIViewProxy.h \
-  /Users/lseletos/Documents/Titanium_Studio_Workspace/WhatsTheOrder/build/iphone/Classes/TiUIClipboardProxy.h \
-  /Users/lseletos/Documents/Titanium_Studio_Workspace/WhatsTheOrder/build/iphone/Classes/TiUIiOSCoverFlowViewProxy.h \
-  /Users/lseletos/Documents/Titanium_Studio_Workspace/WhatsTheOrder/build/iphone/Classes/TiUIiOSToolbarProxy.h \
-  /Users/lseletos/Documents/Titanium_Studio_Workspace/WhatsTheOrder/build/iphone/Classes/TiToolbar.h \
-  /Users/lseletos/Documents/Titanium_Studio_Workspace/WhatsTheOrder/build/iphone/Classes/TiUIiOSTabbedBarProxy.h \
   /Users/lseletos/Documents/Titanium_Studio_Workspace/WhatsTheOrder/build/iphone/Classes/TiApp.h \
   /Users/lseletos/Documents/Titanium_Studio_Workspace/WhatsTheOrder/build/iphone/Classes/TiHost.h \
   /Users/lseletos/Documents/Titanium_Studio_Workspace/WhatsTheOrder/build/iphone/Classes/Bridge.h \
   /Users/lseletos/Documents/Titanium_Studio_Workspace/WhatsTheOrder/build/iphone/Classes/TiStylesheet.h \
   /Users/lseletos/Documents/Titanium_Studio_Workspace/WhatsTheOrder/build/iphone/Classes/KrollBridge.h \
-  /Users/lseletos/Documents/Titanium_Studio_Workspace/WhatsTheOrder/build/iphone/Classes/XHRBridge.h \
   /Users/lseletos/Documents/Titanium_Studio_Workspace/WhatsTheOrder/build/iphone/Classes/TiRootViewController.h \
   /Users/lseletos/Documents/Titanium_Studio_Workspace/WhatsTheOrder/build/iphone/Classes/TiRootController.h \
+  /Users/lseletos/Documents/Titanium_Studio_Workspace/WhatsTheOrder/build/iphone/Classes/TiWindowProxy.h \
+  /Users/lseletos/Documents/Titanium_Studio_Workspace/WhatsTheOrder/build/iphone/Classes/TiViewProxy.h \
+  /Users/lseletos/Documents/Titanium_Studio_Workspace/WhatsTheOrder/build/iphone/Classes/TiUIView.h \
+  /Users/lseletos/Documents/Titanium_Studio_Workspace/WhatsTheOrder/build/iphone/Classes/TiAnimation.h \
+  /Users/lseletos/Documents/Titanium_Studio_Workspace/WhatsTheOrder/build/iphone/Classes/TiPoint.h \
+  /Users/lseletos/Documents/Titanium_Studio_Workspace/WhatsTheOrder/build/iphone/Classes/ListenerEntry.h \
+  /Users/lseletos/Documents/Titanium_Studio_Workspace/WhatsTheOrder/build/iphone/Classes/LayoutConstraint.h \
+  /Users/lseletos/Documents/Titanium_Studio_Workspace/WhatsTheOrder/build/iphone/Classes/TiGradient.h \
+  /Users/lseletos/Documents/Titanium_Studio_Workspace/WhatsTheOrder/build/iphone/Classes/TiRect.h \
+  /Users/lseletos/Documents/Titanium_Studio_Workspace/WhatsTheOrder/build/iphone/Classes/TiTab.h \
+  /Users/lseletos/Documents/Titanium_Studio_Workspace/WhatsTheOrder/build/iphone/Classes/TiTabGroup.h \
+  /Users/lseletos/Documents/Titanium_Studio_Workspace/WhatsTheOrder/build/iphone/Classes/TiUIWindow.h \
+  /Users/lseletos/Documents/Titanium_Studio_Workspace/WhatsTheOrder/build/iphone/Classes/TiViewController.h \
   /Users/lseletos/Documents/Titanium_Studio_Workspace/WhatsTheOrder/build/iphone/Classes/ImageLoader.h \
   /Users/lseletos/Documents/Titanium_Studio_Workspace/WhatsTheOrder/build/iphone/Classes/ASI/ASIHTTPRequest.h \
   /Users/lseletos/Documents/Titanium_Studio_Workspace/WhatsTheOrder/build/iphone/Classes/ASI/ASIHTTPRequestConfig.h \

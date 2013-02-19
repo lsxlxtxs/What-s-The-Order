@@ -28,8 +28,4 @@ dependencies: \
   /Users/lseletos/Documents/Titanium_Studio_Workspace/WhatsTheOrder/build/iphone/Classes/TiBuffer.h \
   /Users/lseletos/Documents/Titanium_Studio_Workspace/WhatsTheOrder/build/iphone/Classes/TiBlob.h \
   /Users/lseletos/Documents/Titanium_Studio_Workspace/WhatsTheOrder/build/iphone/Classes/LayoutConstraint.h \
-  /Users/lseletos/Documents/Titanium_Studio_Workspace/WhatsTheOrder/build/iphone/Classes/TiGradient.h \
-  /Users/lseletos/Documents/Titanium_Studio_Workspace/WhatsTheOrder/build/iphone/Classes/TiUIiOSAdViewProxy.h \
-  /Users/lseletos/Documents/Titanium_Studio_Workspace/WhatsTheOrder/build/iphone/Classes/TiUIViewProxy.h \
-  /Users/lseletos/Documents/Titanium_Studio_Workspace/WhatsTheOrder/build/iphone/Classes/TiViewProxy.h \
-  /Users/lseletos/Documents/Titanium_Studio_Workspace/WhatsTheOrder/build/iphone/Classes/TiRect.h
+  /Users/lseletos/Documents/Titanium_Studio_Workspace/WhatsTheOrder/build/iphone/Classes/TiGradient.h

@@ -34,12 +34,12 @@ MAKE_SYSTEM_PROP(DONE,UIBarButtonSystemItemDone);
 MAKE_SYSTEM_PROP(FLEXIBLE_SPACE,UIBarButtonSystemItemFlexibleSpace);
 MAKE_SYSTEM_PROP(FIXED_SPACE,UIBarButtonSystemItemFixedSpace);
 
-MAKE_SYSTEM_PROP(ACTIVITY,UIWhatsTheOrderNativeItemSpinner);
-MAKE_SYSTEM_PROP(SPINNER,UIWhatsTheOrderNativeItemSpinner);
-MAKE_SYSTEM_PROP(INFO_LIGHT,UIWhatsTheOrderNativeItemInfoLight);
-MAKE_SYSTEM_PROP(INFO_DARK,UIWhatsTheOrderNativeItemInfoDark);
-MAKE_SYSTEM_PROP(DISCLOSURE,UIWhatsTheOrderNativeItemDisclosure);
-MAKE_SYSTEM_PROP(CONTACT_ADD,UIWhatsTheOrderNativeItemContactAdd);
+MAKE_SYSTEM_PROP(ACTIVITY,UITitanium_WhatisTheOrderNativeItemSpinner);
+MAKE_SYSTEM_PROP(SPINNER,UITitanium_WhatisTheOrderNativeItemSpinner);
+MAKE_SYSTEM_PROP(INFO_LIGHT,UITitanium_WhatisTheOrderNativeItemInfoLight);
+MAKE_SYSTEM_PROP(INFO_DARK,UITitanium_WhatisTheOrderNativeItemInfoDark);
+MAKE_SYSTEM_PROP(DISCLOSURE,UITitanium_WhatisTheOrderNativeItemDisclosure);
+MAKE_SYSTEM_PROP(CONTACT_ADD,UITitanium_WhatisTheOrderNativeItemContactAdd);
 
 
 @end

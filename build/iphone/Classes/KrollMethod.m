@@ -204,7 +204,7 @@ TiValueRef KrollCallAsFunction(TiContextRef jsContext, TiObjectRef func, TiObjec
 	NSMethodSignature *methodSignature = [target methodSignatureForSelector:selector];
 	if (methodSignature==nil)
 	{
-		@throw [NSException exceptionWithName:@"org.whatstheorder.kroll" reason:[NSString stringWithFormat:@"invalid method '%@'",NSStringFromSelector(selector)] userInfo:nil];
+		@throw [NSException exceptionWithName:@"org.titanium_whatistheorder.kroll" reason:[NSString stringWithFormat:@"invalid method '%@'",NSStringFromSelector(selector)] userInfo:nil];
 	}
 	IMP methodFunction = [target methodForSelector:selector];
 	id arg1=nil;

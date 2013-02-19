@@ -15,9 +15,6 @@ dependencies: \
   /Users/lseletos/Documents/Titanium_Studio_Workspace/WhatsTheOrder/build/iphone/headers/TiCore/TiContextRefPrivate.h \
   /Users/lseletos/Documents/Titanium_Studio_Workspace/WhatsTheOrder/build/iphone/Classes/KrollCallback.h \
   /Users/lseletos/Documents/Titanium_Studio_Workspace/WhatsTheOrder/build/iphone/Classes/KrollObject.h \
-  /Users/lseletos/Documents/Titanium_Studio_Workspace/WhatsTheOrder/build/iphone/Classes/KrollBridge.h \
-  /Users/lseletos/Documents/Titanium_Studio_Workspace/WhatsTheOrder/build/iphone/Classes/Bridge.h \
-  /Users/lseletos/Documents/Titanium_Studio_Workspace/WhatsTheOrder/build/iphone/Classes/TiModule.h \
   /Users/lseletos/Documents/Titanium_Studio_Workspace/WhatsTheOrder/build/iphone/Classes/TiUtils.h \
   /Users/lseletos/Documents/Titanium_Studio_Workspace/WhatsTheOrder/build/iphone/Classes/TiColor.h \
   /Users/lseletos/Documents/Titanium_Studio_Workspace/WhatsTheOrder/build/iphone/Classes/TiDimension.h \
@@ -27,8 +24,10 @@ dependencies: \
   /Users/lseletos/Documents/Titanium_Studio_Workspace/WhatsTheOrder/build/iphone/Classes/TiBlob.h \
   /Users/lseletos/Documents/Titanium_Studio_Workspace/WhatsTheOrder/build/iphone/Classes/TiApp.h \
   /Users/lseletos/Documents/Titanium_Studio_Workspace/WhatsTheOrder/build/iphone/Classes/TiHost.h \
+  /Users/lseletos/Documents/Titanium_Studio_Workspace/WhatsTheOrder/build/iphone/Classes/Bridge.h \
   /Users/lseletos/Documents/Titanium_Studio_Workspace/WhatsTheOrder/build/iphone/Classes/TiStylesheet.h \
-  /Users/lseletos/Documents/Titanium_Studio_Workspace/WhatsTheOrder/build/iphone/Classes/XHRBridge.h \
+  /Users/lseletos/Documents/Titanium_Studio_Workspace/WhatsTheOrder/build/iphone/Classes/KrollBridge.h \
+  /Users/lseletos/Documents/Titanium_Studio_Workspace/WhatsTheOrder/build/iphone/Classes/TiModule.h \
   /Users/lseletos/Documents/Titanium_Studio_Workspace/WhatsTheOrder/build/iphone/Classes/TiRootViewController.h \
   /Users/lseletos/Documents/Titanium_Studio_Workspace/WhatsTheOrder/build/iphone/Classes/TiRootController.h \
   /Users/lseletos/Documents/Titanium_Studio_Workspace/WhatsTheOrder/build/iphone/Classes/TiWindowProxy.h \

@@ -351,9 +351,6 @@ var roundsperGameLabel = Ti.UI.createLabel({
 win.add(roundsperGameLabel);
 
 
-
-
-
 //Creates button for Play Game
 //When clicked - opens gamemenu file
 var b1 = Ti.UI.createButton({

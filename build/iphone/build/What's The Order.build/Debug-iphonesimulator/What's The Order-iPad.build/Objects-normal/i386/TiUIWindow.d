@@ -29,12 +29,4 @@ dependencies: \
   /Users/lseletos/Documents/Titanium_Studio_Workspace/WhatsTheOrder/build/iphone/Classes/TiBlob.h \
   /Users/lseletos/Documents/Titanium_Studio_Workspace/WhatsTheOrder/build/iphone/Classes/LayoutConstraint.h \
   /Users/lseletos/Documents/Titanium_Studio_Workspace/WhatsTheOrder/build/iphone/Classes/TiGradient.h \
-  /Users/lseletos/Documents/Titanium_Studio_Workspace/WhatsTheOrder/build/iphone/Classes/TiUIWindowProxy.h \
-  /Users/lseletos/Documents/Titanium_Studio_Workspace/WhatsTheOrder/build/iphone/Classes/TiWindowProxy.h \
-  /Users/lseletos/Documents/Titanium_Studio_Workspace/WhatsTheOrder/build/iphone/Classes/TiViewProxy.h \
-  /Users/lseletos/Documents/Titanium_Studio_Workspace/WhatsTheOrder/build/iphone/Classes/TiRect.h \
-  /Users/lseletos/Documents/Titanium_Studio_Workspace/WhatsTheOrder/build/iphone/Classes/TiTab.h \
-  /Users/lseletos/Documents/Titanium_Studio_Workspace/WhatsTheOrder/build/iphone/Classes/TiTabGroup.h \
-  /Users/lseletos/Documents/Titanium_Studio_Workspace/WhatsTheOrder/build/iphone/Classes/TiViewController.h \
-  /Users/lseletos/Documents/Titanium_Studio_Workspace/WhatsTheOrder/build/iphone/Classes/KrollBridge.h \
-  /Users/lseletos/Documents/Titanium_Studio_Workspace/WhatsTheOrder/build/iphone/Classes/Bridge.h
+  /Users/lseletos/Documents/Titanium_Studio_Workspace/WhatsTheOrder/build/iphone/Classes/TiUIWindowProxy.h

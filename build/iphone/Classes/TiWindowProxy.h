@@ -14,7 +14,7 @@
 #import "TiViewController.h"
 
 /**
- WhatsTheOrder orientation flags.
+ Titanium_WhatisTheOrder orientation flags.
  */
 typedef enum
 {

@@ -28,7 +28,7 @@ extern NSString * const TiExceptionInternalInconsistency;
 //Should be rare, but also useful if arguments are used improperly.
 extern NSString * const TiExceptionInternalInconsistency;
 
-//Rare exceptions to indicate a bug in the _whatstheorder code (Eg, function that a subclass should have implemented)
+//Rare exceptions to indicate a bug in the _titanium_whatistheorder code (Eg, function that a subclass should have implemented)
 extern NSString * const TiExceptionUnimplementedFunction;
 
 //Rare exception in the case of malloc failure
@@ -97,7 +97,7 @@ void DoProxyDelegateReadValuesWithKeysFromProxy(UIView<TiProxyDelegate> * target
 
 
 /**
- The base class for WhatsTheOrder proxies.
+ The base class for Titanium_WhatisTheOrder proxies.
  */
 @interface TiProxy : NSObject<KrollTargetable> {
 @private

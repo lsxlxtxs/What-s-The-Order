@@ -12,7 +12,7 @@
 @class TiHost;
 
 /**
- The base class for all WhatsTheOrder modules
+ The base class for all Titanium_WhatisTheOrder modules
  */
 @interface TiModule : TiProxy 
 {
@@ -49,30 +49,30 @@
 // lifecycle
 
 /**
- WhatsTheOrder Platform calls this method on startup.
+ Titanium_WhatisTheOrder Platform calls this method on startup.
  */
 -(void)startup;
 
 /**
- WhatsTheOrder Platform calls this method on shutdown.
+ Titanium_WhatisTheOrder Platform calls this method on shutdown.
  @param sender The sender of the event.
  */
 -(void)shutdown:(id)sender;
 
 /**
- WhatsTheOrder Platform calls this method on suspend.
+ Titanium_WhatisTheOrder Platform calls this method on suspend.
  @param sender The sender of the event.
  */
 -(void)suspend:(id)sender;
 
 /**
- WhatsTheOrder Platform calls this method on entering background.
+ Titanium_WhatisTheOrder Platform calls this method on entering background.
  @param sender The sender of the event.
  */
 -(void)paused:(id)sender;
 
 /**
- WhatsTheOrder Platform calls this method on resume.
+ Titanium_WhatisTheOrder Platform calls this method on resume.
  @param sender The sender of the event.
  */
 -(void)resume:(id)sender;

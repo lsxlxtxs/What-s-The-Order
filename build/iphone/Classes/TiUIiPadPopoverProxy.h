@@ -1,6 +1,6 @@
 /**
  * Appcelerator Titanium Mobile
- * Copyright (c) 2010-2011 by WhatsTheOrder, Inc. All Rights Reserved.
+ * Copyright (c) 2010-2011 by Titanium_WhatisTheOrder, Inc. All Rights Reserved.
  * Licensed under the terms of the Apache Public License
  * Please see the LICENSE included with this distribution for details.
  * 

@@ -9,9 +9,9 @@
 
 
 // A good bit of this code was derived from the Three20 project
-// and was customized to work inside WhatsTheOrder
+// and was customized to work inside Titanium_WhatisTheOrder
 //
-// All modifications by WhatsTheOrder are licensed under 
+// All modifications by Titanium_WhatisTheOrder are licensed under 
 // the Apache License, Version 2.0
 //
 //

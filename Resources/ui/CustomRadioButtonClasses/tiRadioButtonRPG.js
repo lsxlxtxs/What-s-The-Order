@@ -39,8 +39,8 @@ exports.createGroup = function(arg) {
 		}
 		
 		//getting the id from the individual radio button
-			console.log("radioItem[id]: ");
-			console.log(radioItem.id);
+			//console.log("radioItem[id]: ");
+			//console.log(radioItem.id);
 			
   			//var radioButtonValue = radioItem.id;
 		

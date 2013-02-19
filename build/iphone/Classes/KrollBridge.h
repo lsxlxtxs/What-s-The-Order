@@ -19,9 +19,9 @@
 
 #ifdef KROLL_COVERAGE
 # import "KrollCoverage.h"
-@interface WhatsTheOrderObject : KrollCoverageObject {
+@interface Titanium_WhatisTheOrderObject : KrollCoverageObject {
 #else
-@interface WhatsTheOrderObject : KrollObject {
+@interface Titanium_WhatisTheOrderObject : KrollObject {
 #endif
 @private
 	NSMutableDictionary *modules;
@@ -35,7 +35,7 @@
 -(TiModule*)moduleNamed:(NSString*)name context:(id<TiEvaluator>)context;
 @end
 
-extern NSString * WhatsTheOrder$ModuleRequireFormat;
+extern NSString * Titanium_WhatisTheOrder_WhatisTheOrder$ModuleRequireFormat;
 
 @interface KrollBridge : Bridge<TiEvaluator,KrollDelegate> {
 @private
@@ -44,7 +44,7 @@ extern NSString * WhatsTheOrder$ModuleRequireFormat;
 	KrollContext *context;
 	NSDictionary *preload;
 	NSMutableDictionary *modules;
-	WhatsTheOrderObject *_whatstheorder;
+	Titanium_WhatisTheOrderObject *_titanium_whatistheorder;
     KrollObject* console;
 	BOOL shutdown;
     BOOL evaluationError;

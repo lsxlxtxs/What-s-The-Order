@@ -60,7 +60,7 @@ extern "C" {
 	#define KMETHOD_DEBUG MEMORY_DEBUG
 #endif
 
-// in simulator we redefine to format for WhatsTheOrder Developer console
+// in simulator we redefine to format for Titanium_WhatisTheOrder Developer console
 
 
 #define TI_INLINE static __inline__
@@ -296,14 +296,14 @@ void TiExceptionThrowWithNameAndReason(NSString * exceptionName, NSString * mess
 #define DEFINE_EXCEPTIONS \
 - (void) throwException:(NSString *) reason subreason:(NSString*)subreason location:(NSString *)location\
 {\
-	NSString * exceptionName = [@"org.whatstheorder." stringByAppendingString:NSStringFromClass([self class])];\
+	NSString * exceptionName = [@"org.titanium_whatistheorder." stringByAppendingString:NSStringFromClass([self class])];\
 	NSString * message = [NSString stringWithFormat:@"%@. %@ %@",reason,(subreason!=nil?subreason:@""),(location!=nil?location:@"")];\
 	TiExceptionThrowWithNameAndReason(exceptionName,message);\
 }\
 \
 + (void) throwException:(NSString *) reason subreason:(NSString*)subreason location:(NSString *)location\
 {\
-	NSString * exceptionName = @"org.whatstheorder";\
+	NSString * exceptionName = @"org.titanium_whatistheorder";\
 	NSString * message = [NSString stringWithFormat:@"%@. %@ %@",reason,(subreason!=nil?subreason:@""),(location!=nil?location:@"")];\
 	TiExceptionThrowWithNameAndReason(exceptionName,message);\
 }\
@@ -404,28 +404,28 @@ DebugLog(@"[WARN] Ti%@.%@ DEPRECATED in %@, in favor of %@.",@"tanium",api,in,ne
 
  //MUST BE NEGATIVE, as it inhabits the same space as UIBarButtonSystemItem
 enum {
-	UIWhatsTheOrderNativeItemNone = -1, 
-	UIWhatsTheOrderNativeItemSpinner = -2,
-	UIWhatsTheOrderNativeItemProgressBar = -3,
+	UITitanium_WhatisTheOrderNativeItemNone = -1, 
+	UITitanium_WhatisTheOrderNativeItemSpinner = -2,
+	UITitanium_WhatisTheOrderNativeItemProgressBar = -3,
 	
-	UIWhatsTheOrderNativeItemSlider = -4,
-	UIWhatsTheOrderNativeItemSwitch = -5,
-	UIWhatsTheOrderNativeItemMultiButton = -6,
-	UIWhatsTheOrderNativeItemSegmented = -7,
+	UITitanium_WhatisTheOrderNativeItemSlider = -4,
+	UITitanium_WhatisTheOrderNativeItemSwitch = -5,
+	UITitanium_WhatisTheOrderNativeItemMultiButton = -6,
+	UITitanium_WhatisTheOrderNativeItemSegmented = -7,
 	
-	UIWhatsTheOrderNativeItemTextView = -8,
-	UIWhatsTheOrderNativeItemTextField = -9,
-	UIWhatsTheOrderNativeItemSearchBar = -10,
+	UITitanium_WhatisTheOrderNativeItemTextView = -8,
+	UITitanium_WhatisTheOrderNativeItemTextField = -9,
+	UITitanium_WhatisTheOrderNativeItemSearchBar = -10,
 	
-	UIWhatsTheOrderNativeItemPicker = -11,
-	UIWhatsTheOrderNativeItemDatePicker = -12,
+	UITitanium_WhatisTheOrderNativeItemPicker = -11,
+	UITitanium_WhatisTheOrderNativeItemDatePicker = -12,
 	
-	UIWhatsTheOrderNativeItemInfoLight = -13,
-	UIWhatsTheOrderNativeItemInfoDark = -14,
+	UITitanium_WhatisTheOrderNativeItemInfoLight = -13,
+	UITitanium_WhatisTheOrderNativeItemInfoDark = -14,
 	
-	UIWhatsTheOrderNativeItemDisclosure = -15,
+	UITitanium_WhatisTheOrderNativeItemDisclosure = -15,
 	
-	UIWhatsTheOrderNativeItemContactAdd = -16
+	UITitanium_WhatisTheOrderNativeItemContactAdd = -16
 };
 
 
@@ -592,7 +592,7 @@ void incrementKrollCounter();
 void decrementKrollCounter();
     
 /**
- *	TiThreadPerformOnMainThread should replace all WhatsTheOrder instances of
+ *	TiThreadPerformOnMainThread should replace all Titanium_WhatisTheOrder instances of
  *	performSelectorOnMainThread, ESPECIALLY if wait is to be yes. That way,
  *	exceptional-case main thread activities can process them outside of the
  *	standard event loop.
