@@ -1,6 +1,6 @@
 /**
  * Appcelerator Titanium Mobile
- * Copyright (c) 2009-2011 by Titanium_WhatisTheOrder, Inc. All Rights Reserved.
+ * Copyright (c) 2009-2011 by WhatsTheOrder, Inc. All Rights Reserved.
  * Licensed under the terms of the Apache Public License
  * Please see the LICENSE included with this distribution for details.
  * 
@@ -520,10 +520,10 @@ bool KrollSetProperty(TiContextRef jsContext, TiObjectRef object, TiStringRef pr
 
 // forward declare these
 
-//@interface Titanium_WhatisTheOrderObject : NSObject
+//@interface WhatsTheOrderObject : NSObject
 //@end
 
-@interface Titanium_WhatisTheOrderObject (Private)
+@interface WhatsTheOrderObject (Private)
 -(NSDictionary*)modules;
 @end
 
@@ -541,9 +541,9 @@ void KrollPropertyNames(TiContextRef ctx, TiObjectRef object, TiPropertyNameAccu
 	{
 		id target = [o target];
 		
-		if ([o isKindOfClass:[Titanium_WhatisTheOrderObject class]])
+		if ([o isKindOfClass:[WhatsTheOrderObject class]])
 		{
-			for (NSString *key in [[(Titanium_WhatisTheOrderObject*)o modules] allKeys])
+			for (NSString *key in [[(WhatsTheOrderObject*)o modules] allKeys])
 			{
 				TiStringRef value = TiStringCreateWithUTF8CString([key UTF8String]);
 				TiPropertyNameAccumulatorAddName(propertyNames,value);

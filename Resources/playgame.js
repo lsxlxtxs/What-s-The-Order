@@ -83,7 +83,7 @@ var playGameMenu = Ti.UI.createWindow
 //Creates background image on game menu screen						
 var gameScreenImg = Ti.UI.createImageView
 	({
- 		 image:'gamescreen.png'
+ 		 image:'images/gamescreen.png'
 	});
 	
 	//Adds in the background image on main screen						
@@ -94,7 +94,7 @@ var gameScreenImg = Ti.UI.createImageView
 // Create the banner image
 var topBanner = Ti.UI.createImageView
 	({
-		image : 'bannerpic.png',
+		image : 'images/bannerpic.png',
 		height:'auto',
 		width:'auto',
 		top : 25,
@@ -109,7 +109,7 @@ var topBanner = Ti.UI.createImageView
 // Create 1st place image holder
 var firstplace = Ti.UI.createImageView
 	({
-		image : '1stplace.jpg',
+		image : 'images/1stplace.jpg',
 		height:200,
 		width:200,
 		top:215,
@@ -135,7 +135,7 @@ var firstplace = Ti.UI.createImageView
 // Create 2nd place image holder
 var secondplace = Ti.UI.createImageView
 	({
-		image : '2ndplace.jpg',
+		image : 'images/2ndplace.jpg',
 		height:200,
 		width:200,
 		top:215,

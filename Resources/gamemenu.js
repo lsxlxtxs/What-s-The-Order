@@ -58,7 +58,7 @@ if(isGameOver == false)
 		//Creates background image on game menu screen						
 		var gameScreenImg = Ti.UI.createImageView
 			({
-		 		 image:'gamescreen.png'
+		 		 image:'images/gamescreen.png'
 			});
 			
 			//Adds in the background image on main screen						
@@ -69,7 +69,7 @@ if(isGameOver == false)
 		// Create the banner image
 		var topBanner = Ti.UI.createImageView
 			({
-				image : 'bannerpic.png',
+				image: 'images/bannerpic.png',
 				height:'auto',
 				width:'auto',
 				top : 25,
@@ -87,7 +87,7 @@ if(isGameOver == false)
 		// Create 1st place image holder
 		var firstplace = Ti.UI.createImageView
 			({
-				image : '1stplace.jpg',
+				image : 'images/1stplace.jpg',
 				height:200,
 				width:200,
 				top:215,
@@ -110,7 +110,7 @@ if(isGameOver == false)
 		// Create 2nd place image holder
 		var secondplace = Ti.UI.createImageView
 			({
-				image : '2ndplace.jpg',
+				image : 'images/2ndplace.jpg',
 				height:200,
 				width:200,
 				top:215,
@@ -133,7 +133,7 @@ if(isGameOver == false)
 		// Create 3rd place image holder
 		var thirdplace = Ti.UI.createImageView
 			({
-				image : '3rdplace.jpg',
+				image : 'images/3rdplace.jpg',
 				height:200,
 				width:200,
 				top:215,
@@ -158,7 +158,7 @@ if(isGameOver == false)
 		// Create 1st image 
 		var first = Ti.UI.createImageView
 			({
-				image : '1.jpg',
+				image : 'images/1.jpg',
 				height:200,
 				width:200,
 				top:425,
@@ -184,7 +184,7 @@ if(isGameOver == false)
 		// Create 2nd image 
 		var second = Ti.UI.createImageView
 			({
-				image : '2.jpg',
+				image : 'images/2.jpg',
 				height:200,
 				width:200,
 				top:425,
@@ -211,7 +211,7 @@ if(isGameOver == false)
 		// Create 3rd image
 		var third = Ti.UI.createImageView
 			({
-				image : '3.jpg',
+				image : 'images/3.jpg',
 				height:200,
 				width:200,
 				top:425,

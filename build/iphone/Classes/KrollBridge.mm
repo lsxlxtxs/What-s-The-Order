@@ -26,13 +26,13 @@
 
 extern BOOL const TI_APPLICATION_ANALYTICS;
 
-NSString * Titanium_WhatisTheOrder_WhatisTheOrder$ModuleRequireFormat = @"(function(exports){"
+NSString * WhatsTheOrder$ModuleRequireFormat = @"(function(exports){"
 		"var __OXP=exports;var module={'exports':exports};%@;\n"
 		"if(module.exports !== __OXP){return module.exports;}"
 		"return exports;})({})";
 
 
-@implementation Titanium_WhatisTheOrderObject
+@implementation WhatsTheOrderObject
 
 -(NSDictionary*)modules
 {
@@ -319,7 +319,7 @@ CFMutableSetRef	krollBridgeRegistry = nil;
 	[self removeProxies];
 	RELEASE_TO_NIL(preload);
 	RELEASE_TO_NIL(context);
-	RELEASE_TO_NIL(_titanium_whatistheorder);
+	RELEASE_TO_NIL(_whatstheorder);
 	OSSpinLockLock(&krollBridgeRegistryLock);
 	CFSetRemoveValue(krollBridgeRegistry, self);
 	OSSpinLockUnlock(&krollBridgeRegistryLock);
@@ -540,7 +540,7 @@ CFMutableSetRef	krollBridgeRegistry = nil;
 -(void)gc
 {
 	[context gc];
-	[_titanium_whatistheorder gc];
+	[_whatstheorder gc];
 }
 
 #pragma mark Delegate
@@ -552,18 +552,18 @@ CFMutableSetRef	krollBridgeRegistry = nil;
 
 -(void)didStartNewContext:(KrollContext*)kroll
 {
-	// create Titanium_WhatisTheOrder global object
+	// create WhatsTheOrder global object
     NSAutoreleasePool* pool = [[NSAutoreleasePool alloc] init];
     
-    // Load the "Titanium_WhatisTheOrder" object into the global scope
+    // Load the "WhatsTheOrder" object into the global scope
 	NSString *basePath = (url==nil) ? [TiHost resourcePath] : [[[url path] stringByDeletingLastPathComponent] stringByAppendingPathComponent:@"."];
-	_titanium_whatistheorder = [[Titanium_WhatisTheOrderObject alloc] initWithContext:kroll host:host context:self baseURL:[NSURL fileURLWithPath:basePath]];
+	_whatstheorder = [[WhatsTheOrderObject alloc] initWithContext:kroll host:host context:self baseURL:[NSURL fileURLWithPath:basePath]];
 	
 	TiContextRef jsContext = [kroll context];
-	TiValueRef tiRef = [KrollObject toValue:kroll value:_titanium_whatistheorder];
+	TiValueRef tiRef = [KrollObject toValue:kroll value:_whatstheorder];
 	
-	NSString *_titanium_whatistheorderNS = [NSString stringWithFormat:@"T%sanium","it"];
-	TiStringRef prop = TiStringCreateWithCFString((CFStringRef) _titanium_whatistheorderNS);
+	NSString *_whatstheorderNS = [NSString stringWithFormat:@"T%sanium","it"];
+	TiStringRef prop = TiStringCreateWithCFString((CFStringRef) _whatstheorderNS);
 	TiStringRef prop2 = TiStringCreateWithCFString((CFStringRef) [NSString stringWithFormat:@"%si","T"]);
 	TiObjectRef globalRef = TiContextGetGlobalObject(jsContext);
 	TiObjectSetProperty(jsContext, globalRef, prop, tiRef, NULL, NULL);
@@ -581,7 +581,7 @@ CFMutableSetRef	krollBridgeRegistry = nil;
 	{
 		for (NSString *name in preload)
 		{
-			KrollObject *ti = (KrollObject*)[_titanium_whatistheorder valueForKey:name];
+			KrollObject *ti = (KrollObject*)[_whatstheorder valueForKey:name];
 			NSDictionary *values = [preload valueForKey:name];
 			for (id key in values)
 			{
@@ -617,7 +617,7 @@ CFMutableSetRef	krollBridgeRegistry = nil;
 		NSNotification *notification = [NSNotification notificationWithName:kTiContextShutdownNotification object:self];
 		[[NSNotificationCenter defaultCenter] postNotification:notification];
 	}
-	[_titanium_whatistheorder gc];
+	[_whatstheorder gc];
 	
 	if (shutdownCondition)
 	{
@@ -632,7 +632,7 @@ CFMutableSetRef	krollBridgeRegistry = nil;
 {
 	TiThreadPerformOnMainThread(^{[self unregisterForMemoryWarning];}, NO);
 	[self removeProxies];
-	RELEASE_TO_NIL(_titanium_whatistheorder);
+	RELEASE_TO_NIL(_whatstheorder);
     RELEASE_TO_NIL(console);
 	RELEASE_TO_NIL(context);
 	RELEASE_TO_NIL(preload);
@@ -721,7 +721,7 @@ CFMutableSetRef	krollBridgeRegistry = nil;
 
 -(id)loadCommonJSModule:(NSString*)code withSourceURL:(NSURL *)sourceURL
 {
-	NSString *js = [[NSString alloc] initWithFormat:Titanium_WhatisTheOrder_WhatisTheOrder$ModuleRequireFormat,code];
+	NSString *js = [[NSString alloc] initWithFormat:WhatsTheOrder$ModuleRequireFormat,code];
 
 	/* This most likely should be integrated with normal code flow, but to
 	 * minimize impact until a in-depth reconsideration of KrollContext can be
@@ -842,7 +842,7 @@ CFMutableSetRef	krollBridgeRegistry = nil;
         }
         
 		if (![wrapper respondsToSelector:@selector(replaceValue:forKey:notification:)]) {
-			@throw [NSException exceptionWithName:@"org.titanium_whatistheorder.kroll" reason:[NSString stringWithFormat:@"Module \"%@\" failed to leave a valid exports object",path] userInfo:nil];
+			@throw [NSException exceptionWithName:@"org.whatstheorder.kroll" reason:[NSString stringWithFormat:@"Module \"%@\" failed to leave a valid exports object",path] userInfo:nil];
 		}
 		
 		// register the module if it's pure JS
@@ -888,7 +888,7 @@ CFMutableSetRef	krollBridgeRegistry = nil;
 		return module;
 	}
 	
-	@throw [NSException exceptionWithName:@"org.titanium_whatistheorder.kroll" reason:[NSString stringWithFormat:@"Couldn't find module: %@",path] userInfo:nil];
+	@throw [NSException exceptionWithName:@"org.whatstheorder.kroll" reason:[NSString stringWithFormat:@"Couldn't find module: %@",path] userInfo:nil];
 }
 
 + (NSArray *)krollBridgesUsingProxy:(id)proxy

@@ -63,10 +63,10 @@
 {
 	switch(styleCache)
 	{
-		case UITitanium_WhatisTheOrderNativeItemInfoLight:
-		case UITitanium_WhatisTheOrderNativeItemInfoDark:
+		case UIWhatsTheOrderNativeItemInfoLight:
+		case UIWhatsTheOrderNativeItemInfoDark:
 			return 18;
-		case UITitanium_WhatisTheOrderNativeItemDisclosure:
+		case UIWhatsTheOrderNativeItemDisclosure:
 			return 29;
 		default: {
 			break;
@@ -79,10 +79,10 @@
 {
 	switch(styleCache)
 	{
-		case UITitanium_WhatisTheOrderNativeItemInfoLight:
-		case UITitanium_WhatisTheOrderNativeItemInfoDark:
+		case UIWhatsTheOrderNativeItemInfoLight:
+		case UIWhatsTheOrderNativeItemInfoDark:
 			return 19;
-		case UITitanium_WhatisTheOrderNativeItemDisclosure:
+		case UIWhatsTheOrderNativeItemDisclosure:
 			return 31;
 		default: {
 			break;
@@ -96,9 +96,9 @@
 {
 	switch (styleCache)
 	{
-		case UITitanium_WhatisTheOrderNativeItemInfoLight:
-		case UITitanium_WhatisTheOrderNativeItemInfoDark:
-		case UITitanium_WhatisTheOrderNativeItemDisclosure:
+		case UIWhatsTheOrderNativeItemInfoLight:
+		case UIWhatsTheOrderNativeItemInfoDark:
+		case UIWhatsTheOrderNativeItemDisclosure:
 			return suggestedResizing & ~(UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight);
 		default: {
 			break;

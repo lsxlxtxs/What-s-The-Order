@@ -1,11 +1,11 @@
 Logfile initialized
 [INFO] logfile = /Users/lseletos/Documents/Titanium_Studio_Workspace/WhatsTheOrder/build.log
-[DEBUG] /Users/lseletos/Library/Application Support/Titanium/mobilesdk/osx/2.1.4.GA/android/builder.py install Titanium - What is The Order /Users/lseletos/Documents/android-sdk-macosx /Users/lseletos/Documents/Titanium_Studio_Workspace/WhatsTheOrder com.stetson.whatstheorder 1
+[DEBUG] /Users/lseletos/Library/Application Support/Titanium/mobilesdk/osx/2.1.4.GA/android/builder.py install What's The Order /Users/lseletos/Documents/android-sdk-macosx /Users/lseletos/Documents/Titanium_Studio_Workspace/WhatsTheOrder com.stetson.whatstheorder 1
 [INFO] Titanium SDK version: 2.1.4 (11/09/12 12:46 51f2c64)
 [DEBUG] Waiting for device to be ready ...
 [TRACE] adb devices returned 1 devices/emulators
 [DEBUG] Device connected... (waited 0 seconds)
-[DEBUG] waited 0.018735 seconds on emulator to get ready
+[DEBUG] waited 0.020464 seconds on emulator to get ready
 [DEBUG] com.stetson.whatstheorder installed? False
 [INFO] Copying CommonJS modules...
 [INFO] Copying project resources..
@@ -16,6 +16,7 @@ Logfile initialized
 [TRACE] COPYING FILE: /Users/lseletos/Documents/Titanium_Studio_Workspace/WhatsTheOrder/Resources/android/images/res-notlong-land-ldpi/bgimage.png => /Users/lseletos/Documents/Titanium_Studio_Workspace/WhatsTheOrder/build/android/res/drawable-notlong-land-ldpi/bgimage_7022f863c1.png
 [TRACE] COPYING FILE: /Users/lseletos/Documents/Titanium_Studio_Workspace/WhatsTheOrder/Resources/android/images/res-notlong-land-ldpi/droidbg.png => /Users/lseletos/Documents/Titanium_Studio_Workspace/WhatsTheOrder/build/android/res/drawable-notlong-land-ldpi/droidbg_2d79594323.png
 [TRACE] COPYING FILE: /Users/lseletos/Documents/Titanium_Studio_Workspace/WhatsTheOrder/Resources/android/images/res-notlong-land-ldpi/gameinfobg.png => /Users/lseletos/Documents/Titanium_Studio_Workspace/WhatsTheOrder/build/android/res/drawable-notlong-land-ldpi/gameinfobg_e8e32afa08.png
+[TRACE] COPYING FILE: /Users/lseletos/Documents/Titanium_Studio_Workspace/WhatsTheOrder/Resources/android/images/res-notlong-land-mdpi/Default-Landscape.png => /Users/lseletos/Documents/Titanium_Studio_Workspace/WhatsTheOrder/build/android/res/drawable-notlong-land-mdpi/default_landscape_a05f1012a4.png
 [DEBUG] copying app icon: /Users/lseletos/Documents/Titanium_Studio_Workspace/WhatsTheOrder/build/android/bin/assets/Resources/applogomain.png
 [DEBUG] generating theme.xml
 [DEBUG] found drawable-long-land-hdpi splash screen at /Users/lseletos/Documents/Titanium_Studio_Workspace/WhatsTheOrder/Resources/android/images/res-long-land-hdpi/default.png
@@ -30,8 +31,6 @@ Logfile initialized
 [DEBUG] copying /Users/lseletos/Documents/Titanium_Studio_Workspace/WhatsTheOrder/Resources/android/images/res-notlong-land-hdpi/default.png splash screen to /Users/lseletos/Documents/Titanium_Studio_Workspace/WhatsTheOrder/build/android/res/drawable-notlong-land-hdpi/background.png
 [DEBUG] found drawable-notlong-land-ldpi splash screen at /Users/lseletos/Documents/Titanium_Studio_Workspace/WhatsTheOrder/Resources/android/images/res-notlong-land-ldpi/default.png
 [DEBUG] copying /Users/lseletos/Documents/Titanium_Studio_Workspace/WhatsTheOrder/Resources/android/images/res-notlong-land-ldpi/default.png splash screen to /Users/lseletos/Documents/Titanium_Studio_Workspace/WhatsTheOrder/build/android/res/drawable-notlong-land-ldpi/background.png
-[DEBUG] found drawable-notlong-land-mdpi splash screen at /Users/lseletos/Documents/Titanium_Studio_Workspace/WhatsTheOrder/Resources/android/images/res-notlong-land-mdpi/default.png
-[DEBUG] copying /Users/lseletos/Documents/Titanium_Studio_Workspace/WhatsTheOrder/Resources/android/images/res-notlong-land-mdpi/default.png splash screen to /Users/lseletos/Documents/Titanium_Studio_Workspace/WhatsTheOrder/build/android/res/drawable-notlong-land-mdpi/background.png
 [DEBUG] found drawable-notlong-port-hdpi splash screen at /Users/lseletos/Documents/Titanium_Studio_Workspace/WhatsTheOrder/Resources/android/images/res-notlong-port-hdpi/default.png
 [DEBUG] copying /Users/lseletos/Documents/Titanium_Studio_Workspace/WhatsTheOrder/Resources/android/images/res-notlong-port-hdpi/default.png splash screen to /Users/lseletos/Documents/Titanium_Studio_Workspace/WhatsTheOrder/build/android/res/drawable-notlong-port-hdpi/background.png
 [DEBUG] found drawable-notlong-port-ldpi splash screen at /Users/lseletos/Documents/Titanium_Studio_Workspace/WhatsTheOrder/Resources/android/images/res-notlong-port-ldpi/default.png
@@ -41,10 +40,10 @@ Logfile initialized
 [DEBUG] found splash screen at /Users/lseletos/Documents/Titanium_Studio_Workspace/WhatsTheOrder/build/android/bin/assets/Resources/default.png
 [TRACE] Writing out AndroidManifest.xml
 [DEBUG] adding /Users/lseletos/Documents/Titanium_Studio_Workspace/WhatsTheOrder/build/android/gen/com/stetson/whatstheorder/R.java to javac build list
-[DEBUG] adding /Users/lseletos/Documents/Titanium_Studio_Workspace/WhatsTheOrder/build/android/gen/com/stetson/whatstheorder/TitaniumWhatIsTheOrderActivity.java to javac build list
-[DEBUG] adding /Users/lseletos/Documents/Titanium_Studio_Workspace/WhatsTheOrder/build/android/gen/com/stetson/whatstheorder/TitaniumWhatIsTheOrderAppInfo.java to javac build list
-[DEBUG] adding /Users/lseletos/Documents/Titanium_Studio_Workspace/WhatsTheOrder/build/android/gen/com/stetson/whatstheorder/TitaniumWhatIsTheOrderApplication.java to javac build list
-[DEBUG] Building Java Sources: "/Users/lseletos/Documents/Titanium_Studio_Workspace/WhatsTheOrder/build/android/gen/com/stetson/whatstheorder/R.java" "/Users/lseletos/Documents/Titanium_Studio_Workspace/WhatsTheOrder/build/android/gen/com/stetson/whatstheorder/TitaniumWhatIsTheOrderActivity.java" "/Users/lseletos/Documents/Titanium_Studio_Workspace/WhatsTheOrder/build/android/gen/com/stetson/whatstheorder/TitaniumWhatIsTheOrderAppInfo.java" "/Users/lseletos/Documents/Titanium_Studio_Workspace/WhatsTheOrder/build/android/gen/com/stetson/whatstheorder/TitaniumWhatIsTheOrderApplication.java"
+[DEBUG] adding /Users/lseletos/Documents/Titanium_Studio_Workspace/WhatsTheOrder/build/android/gen/com/stetson/whatstheorder/WhatSTheOrderActivity.java to javac build list
+[DEBUG] adding /Users/lseletos/Documents/Titanium_Studio_Workspace/WhatsTheOrder/build/android/gen/com/stetson/whatstheorder/WhatSTheOrderAppInfo.java to javac build list
+[DEBUG] adding /Users/lseletos/Documents/Titanium_Studio_Workspace/WhatsTheOrder/build/android/gen/com/stetson/whatstheorder/WhatSTheOrderApplication.java to javac build list
+[DEBUG] Building Java Sources: "/Users/lseletos/Documents/Titanium_Studio_Workspace/WhatsTheOrder/build/android/gen/com/stetson/whatstheorder/R.java" "/Users/lseletos/Documents/Titanium_Studio_Workspace/WhatsTheOrder/build/android/gen/com/stetson/whatstheorder/WhatSTheOrderActivity.java" "/Users/lseletos/Documents/Titanium_Studio_Workspace/WhatsTheOrder/build/android/gen/com/stetson/whatstheorder/WhatSTheOrderAppInfo.java" "/Users/lseletos/Documents/Titanium_Studio_Workspace/WhatsTheOrder/build/android/gen/com/stetson/whatstheorder/WhatSTheOrderApplication.java"
 [INFO] Compiling Android Resources... This could take some time
 [DEBUG] Android classes.dex built
 [DEBUG] creating unsigned apk: /Users/lseletos/Documents/Titanium_Studio_Workspace/WhatsTheOrder/build/android/bin/app-unsigned.apk
@@ -54,7 +53,6 @@ Logfile initialized
 [DEBUG] from resource zip => assets/Resources/ui/CustomRadioButtonClasses/tiRadioButtonPRACTICE.js
 [DEBUG] from resource zip => assets/Resources/ui/CustomRadioButtonClasses/tiRadioButtonREPEATGAME.js
 [DEBUG] from resource zip => assets/Resources/ui/CustomRadioButtonClasses/tiRadioButtonREWARDSCREEN.js
-[DEBUG] from resource zip => assets/Resources/ui/CustomRadioButtonClasses/tiRadioButtonRPG.js
 [DEBUG] from resource zip => assets/Resources/ui/CustomRadioButtonClasses/tiRadioButtonTEXT.js
 [DEBUG] from resource zip => assets/Resources/ui/CustomRadioButtonClasses/tiRadioButtonVIDEO.js
 [DEBUG] from resource zip => assets/Resources/ui/CustomRadioButtonClasses/tiRadioButtonVerdicalACTIONS.js
@@ -79,7 +77,6 @@ Logfile initialized
 [DEBUG] from resource zip => assets/Resources/gameinfobg.png
 [DEBUG] from resource zip => assets/Resources/gameinformation.js
 [DEBUG] from resource zip => assets/Resources/gameinstructions.js
-[DEBUG] from resource zip => assets/Resources/gamemenu.js
 [DEBUG] from resource zip => assets/Resources/gamescreen.png
 [DEBUG] from resource zip => assets/Resources/playgame.js
 [DEBUG] from resource zip => assets/Resources/radioButton.png
@@ -103,7 +100,7 @@ Logfile initialized
 [DEBUG] from resource zip => res/drawable-notlong-land-ldpi/bgimage_7022f863c1.png
 [DEBUG] from resource zip => res/drawable-notlong-land-ldpi/droidbg_2d79594323.png
 [DEBUG] from resource zip => res/drawable-notlong-land-ldpi/gameinfobg_e8e32afa08.png
-[DEBUG] from resource zip => res/drawable-notlong-land-mdpi/background.png
+[DEBUG] from resource zip => res/drawable-notlong-land-mdpi/default_landscape_a05f1012a4.png
 [DEBUG] from resource zip => res/drawable-notlong-port-hdpi/background.png
 [DEBUG] from resource zip => res/drawable-notlong-port-ldpi/background.png
 [DEBUG] from resource zip => res/drawable-notlong-port-mdpi/background.png
@@ -132,6 +129,6 @@ Logfile initialized
 [DEBUG] Waiting for device to be ready ...
 [TRACE] adb devices returned 1 devices/emulators
 [DEBUG] Device connected... (waited 0 seconds)
-[DEBUG] waited 0.019833 seconds on emulator to get ready
+[DEBUG] waited 0.018846 seconds on emulator to get ready
 [INFO] Installing application on device
 [INFO] Application installed. Launch from drawer on Home Screen

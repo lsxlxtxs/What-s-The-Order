@@ -112,7 +112,7 @@ typedef enum {
 @end
 
 /**
- The ImageLoader class provides a centralized point for loading images in Titanium_WhatisTheOrder.
+ The ImageLoader class provides a centralized point for loading images in WhatsTheOrder.
  Using ImageLoader is the preferred way for getting images from remote sources.
  
  The class is singleton and not supposed to be subclassed.

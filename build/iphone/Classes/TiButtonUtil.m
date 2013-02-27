@@ -16,23 +16,23 @@
 {
 	switch (type)
 	{
-		case UITitanium_WhatisTheOrderNativeItemInfoLight:
+		case UIWhatsTheOrderNativeItemInfoLight:
 		{
 			return [UIButton buttonWithType:UIButtonTypeInfoLight];
 		}
-		case UITitanium_WhatisTheOrderNativeItemInfoDark:
+		case UIWhatsTheOrderNativeItemInfoDark:
 		{
 			return [UIButton buttonWithType:UIButtonTypeInfoDark];
 		}
-		case UITitanium_WhatisTheOrderNativeItemDisclosure:
+		case UIWhatsTheOrderNativeItemDisclosure:
 		{
 			return [UIButton buttonWithType:UIButtonTypeDetailDisclosure];
 		}
-		case UITitanium_WhatisTheOrderNativeItemContactAdd:
+		case UIWhatsTheOrderNativeItemContactAdd:
 		{
 			return [UIButton buttonWithType:UIButtonTypeContactAdd];
 		}
-		case UITitanium_WhatisTheOrderNativeItemSpinner:
+		case UIWhatsTheOrderNativeItemSpinner:
 		{
 			UIActivityIndicatorView *button = [[[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleWhite] autorelease];
 			[button startAnimating];

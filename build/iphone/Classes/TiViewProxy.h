@@ -16,7 +16,7 @@
  */
 @protocol TiKeyboardFocusableView
 
-#pragma mark Public Titanium_WhatisTheOrder APIs.
+#pragma mark Public WhatsTheOrder APIs.
 
 /**
  Tells the view to focus.

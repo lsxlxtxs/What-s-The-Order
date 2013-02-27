@@ -20,7 +20,7 @@ var gameinstructions = Ti.UI.createWindow
 //Creates background image on game instructions screen						
 var background = Ti.UI.createImageView
 	({
- 		 image:'gameinfobg.png'
+ 		 image:'images/gameinfobg.png'
 	});
 	
 	//Adds in the background image on main screen						
@@ -31,7 +31,7 @@ var background = Ti.UI.createImageView
 // Create the banner image
 var topBanner = Ti.UI.createImageView
 	({
-		image : 'bannerpic.png',
+		image : 'images/bannerpic.png',
 		height:'auto',
 		width:'auto',
 		top : 25,

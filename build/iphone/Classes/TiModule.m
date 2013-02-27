@@ -157,7 +157,7 @@
 		if (resultClass==nil)
 		{
 			DebugLog(@"[WARN] Attempted to load %@: Could not find class definition.",className);
-			@throw [NSException exceptionWithName:@"org.titanium_whatistheorder.module" 
+			@throw [NSException exceptionWithName:@"org.whatstheorder.module" 
 										   reason:[NSString stringWithFormat:@"invalid method (%@) passed to %@",name,[self class]] 
 										 userInfo:nil];
 		}
@@ -217,7 +217,7 @@
 
 -(id)bindCommonJSModule:(NSString*)code
 {
-	NSString *js = [[NSString alloc] initWithFormat:Titanium_WhatisTheOrder_WhatisTheOrder$ModuleRequireFormat,code];
+	NSString *js = [[NSString alloc] initWithFormat:WhatsTheOrder$ModuleRequireFormat,code];
 	
 	id result = [[self pageContext] evalJSAndWait:js];
 	[js release];
