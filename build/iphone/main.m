@@ -9,12 +9,12 @@
 
 NSString * const TI_APPLICATION_DEPLOYTYPE = @"development";
 NSString * const TI_APPLICATION_ID = @"com.stetson.whatstheorder";
-NSString * const TI_APPLICATION_PUBLISHER = @"lseletos";
+NSString * const TI_APPLICATION_PUBLISHER = @"Lseletos";
 NSString * const TI_APPLICATION_URL = @"http://";
 NSString * const TI_APPLICATION_NAME = @"What's The Order";
 NSString * const TI_APPLICATION_VERSION = @"1.0";
 NSString * const TI_APPLICATION_DESCRIPTION = @"Crossplatform - Appcelerator";
-NSString * const TI_APPLICATION_COPYRIGHT = @"2013 by lseletos";
+NSString * const TI_APPLICATION_COPYRIGHT = @"2013 by Laura Seletos";
 NSString * const TI_APPLICATION_GUID = @"054c1e4c-7ad0-433a-a873-79aacdbe27a9";
 BOOL const TI_APPLICATION_ANALYTICS = true;
 

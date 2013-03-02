@@ -1,6 +1,8 @@
 //Parent Class for Repeat Game Radio Buttons
 //Adapted from: https://github.com/Lukic/TiRadioButtonGroup
 
+var adjustPositioning = 12;
+
 exports.createGroup = function(arg) {
 	
 	//// Main object that will be returned when createGroup is called.
@@ -9,7 +11,7 @@ exports.createGroup = function(arg) {
 		height:arg.height,
 		groupId: arg.groupId,
 		layout:'horizontal',
-		top:596,
+		top:596+adjustPositioning,
 		left:158
 	});
 

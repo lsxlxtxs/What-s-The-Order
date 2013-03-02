@@ -1,3 +1,6 @@
+Ti.include('linearDroid.js','relativeDroid.js');
+
+
 /* Game Information Page
  * 
  * Generates a window to display text for the game
@@ -36,13 +39,14 @@ var topBanner = Ti.UI.createImageView
 		height:'auto',
 		width:'auto',
 		top : 25,
-		left : 359
+		left : 489
 	});
 
 	// Add to the parent view.
 	gameinformationDROID.add(topBanner);
 
 
+var adjustPositioning = 100;
 
 //Create label text for Whats the Order
 var l1 = Ti.UI.createLabel({
@@ -51,7 +55,7 @@ var l1 = Ti.UI.createLabel({
 	font:{fontSize:25},
 	height:'auto',
 	width:'auto',
-	left:416,
+	left:416 + adjustPositioning,
 	top:230
 });
 gameinformationDROID.add(l1);
@@ -64,7 +68,7 @@ var l2 = Ti.UI.createLabel({
 	font:{fontSize:19},
 	height:'auto',
 	width:'auto',
-	left:485,
+	left:485 + adjustPositioning,
 	top:255
 });
 gameinformationDROID.add(l2);
@@ -77,7 +81,7 @@ var l3 = Ti.UI.createLabel({
 	font:{fontSize:19},
 	height:'auto',
 	width:'auto',
-	left:415,
+	left:415 + adjustPositioning,
 	top:275
 });
 gameinformationDROID.add(l3);
@@ -91,7 +95,7 @@ var middle1 = Ti.UI.createLabel({
 	font:{fontSize:17},
 	height:'auto',
 	width:'auto',
-	left:335,
+	left:335 + adjustPositioning,
 	top:330
 });
 gameinformationDROID.add(middle1);
@@ -104,7 +108,7 @@ var middle2 = Ti.UI.createLabel({
 	font:{fontSize:17},
 	height:'auto',
 	width:'auto',
-	left:335,
+	left:335 + adjustPositioning,
 	top:355
 });
 gameinformationDROID.add(middle2);
@@ -117,7 +121,7 @@ var middle3 = Ti.UI.createLabel({
 	font:{fontSize:17},
 	height:'auto',
 	width:'auto',
-	left:335,
+	left:335 + adjustPositioning,
 	top:375
 });
 gameinformationDROID.add(middle3);
@@ -130,7 +134,7 @@ var middle4 = Ti.UI.createLabel({
 	font:{fontSize:17},
 	height:'auto',
 	width:'auto',
-	left:335,
+	left:335 + adjustPositioning,
 	top:395
 });
 gameinformationDROID.add(middle4);
@@ -143,7 +147,7 @@ var middle5 = Ti.UI.createLabel({
 	font:{fontSize:17},
 	height:'auto',
 	width:'auto',
-	left:335,
+	left:335 + adjustPositioning,
 	top:415
 });
 gameinformationDROID.add(middle5);
@@ -157,7 +161,7 @@ var creditLabel = Ti.UI.createLabel({
 	font:{fontSize:17},
 	height:'auto',
 	width:'auto',
-	left:375,
+	left:375 + adjustPositioning,
 	top:460
 });
 gameinformationDROID.add(creditLabel);
@@ -171,13 +175,17 @@ var b1 = Ti.UI.createButton({
 	title:'Back',
 	width:85,
 	height:35,
-	top:10,
+	top:15,
 	right:10
 });
 b1.addEventListener('click', function()
 {
+	//Default to Relative Time Display:
+	winRelativeDroid.open();
+	
 	gameinformationDROID.close();
 	winDROID.open();
+
 });
 gameinformationDROID.add(b1);
 

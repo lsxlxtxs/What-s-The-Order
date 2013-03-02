@@ -1,7 +1,6 @@
 //Parent Class for Actions Radio Buttons
 //Adapted from: https://github.com/Lukic/TiRadioButtonGroup
 
-
 exports.createGroup = function(arg) {
 	
 	//// Main object that will be returned when createGroup is called.

@@ -1,5 +1,6 @@
 //Parent Class for Text Radio Buttons
 //Adapted from: https://github.com/Lukic/TiRadioButtonGroup
+var adjustPositioning = 12;
 
 exports.createGroup = function(arg) {
 	
@@ -9,7 +10,7 @@ exports.createGroup = function(arg) {
 		height:arg.height,
 		groupId: arg.groupId,
 		layout:'horizontal',
-		top:676,
+		top:676+adjustPositioning,
 		left:364
 	});
 

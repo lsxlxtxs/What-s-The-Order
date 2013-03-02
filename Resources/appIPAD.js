@@ -1,5 +1,5 @@
 //Includes the .js files that the buttons on this screen will be navigating to.
-Ti.include( 'gameinfoIPAD.js','gameinstrIPAD.js','playGameIPAD.js');
+Ti.include( 'gameInfoIPAD.js','gameInstrIPAD.js','playGameIPAD.js','linearIPAD.js','relativeIPAD.js');
 
 /* IPAD
  * 
@@ -15,6 +15,10 @@ Ti.include( 'gameinfoIPAD.js','gameinstrIPAD.js','playGameIPAD.js');
  * Advisor: Dr. Branton
  *  
  */
+
+//Save username in a variable
+var userName = "";
+
 
 //Creates the window and sets the orientation to landscape
 var winIPAD = Ti.UI.createWindow
@@ -93,50 +97,14 @@ var button = Ti.UI.createButton({
 	width:80,
 	title:'Save'
 });
-//Adds save button to view
-winIPAD.add(button);
-
-
-//Creates button for switching to Linear Time
-var linearbutton = Ti.UI.createButton({
-	color: '#000000',
-	left:130,
-	top:210,
-	width:115,
-	height:30,
-	title:'Linear Time'
-});
-//Adds save button to view
-winIPAD.add(linearbutton);
-
-
-
-//Creates button for switching to Relative Time
-var relativebutton = Ti.UI.createButton({
-	color: '#000000',
-	left:255,
-	top:210,
-	width:115,
-	height:30,
-	title:'Relative Time'
-});
-//Adds save button to view
-winIPAD.add(relativebutton);
-
-
-
-//Creates button for switching to advanced options button
-var advancedButton = Ti.UI.createButton({
-	color: '#000000',
-	left:470,
-	top:480,
-	width:165,
-	height:30,
-	title:'Advanced Options'
-});
-//Adds save button to view
-winIPAD.add(advancedButton);
-
+	//Adds click functionality to the play game function 
+	button.addEventListener('click', function(e)
+	{
+		userName = field.value;
+		alert("Hello" + userName +"!");
+	});
+	//Adds save button to view
+	winIPAD.add(button);
 
 
 //Label for 'Actions:'
@@ -152,105 +120,8 @@ var actions = Ti.UI.createLabel({
 //add label to window
 winIPAD.add(actions);
 
-
-
-//Label for 'A video shows...'
-var middleText1 = Ti.UI.createLabel({
-	text:'A video shows an action. The action is divided into 3 Steps. The', 
-	color: '#000000',
-	font:{fontSize:17},
-	height:'auto',
-	width:'auto',
-	left:155,
-	top:300
-});
-//add label to window
-winIPAD.add(middleText1);
-
-
-//Label for 'middle step is...'
-var middleText2 = Ti.UI.createLabel({
-	text:'middle step is placed on the screen and the player is asked to tell', 
-	color: '#000000',
-	font:{fontSize:17},
-	height:'auto',
-	width:'auto',
-	left:155,
-	top:320
-});
-//add label to window
-winIPAD.add(middleText2);
-
-
-//Label for 'what occured before...'
-var middleText3 = Ti.UI.createLabel({
-	text:'what occured before and after that step.', 
-	color: '#000000',
-	font:{fontSize:17},
-	height:'auto',
-	width:'auto',
-	left:155,
-	top:340
-});
-//add label to window
-winIPAD.add(middleText3);
-
-
-//Label for 'basic play'
-var basicPlayLabel = Ti.UI.createLabel({
-	text:'Basic Play:', 
-	color: '#000000',
-	font:{fontSize:17},
-	height:'auto',
-	width:'auto',
-	left:155,
-	top:380
-});
-//add label to window
-winIPAD.add(basicPlayLabel);
-
-
-//Label for 'Step 1: before'
-var step1Label = Ti.UI.createLabel({
-	text:'Step 1: before', 
-	color: '#000000',
-	font:{fontSize:17},
-	height:'auto',
-	width:'auto',
-	left:475,
-	top:400
-});
-//add label to window
-winIPAD.add(step1Label);
-
-
-//Label for 'Step 2: now'
-var step2Label = Ti.UI.createLabel({
-	text:'Step 2: now', 
-	color: '#000000',
-	font:{fontSize:17},
-	height:'auto',
-	width:'auto',
-	left:475,
-	top:420
-});
-//add label to window
-winIPAD.add(step2Label);
-
-
-//Label for 'Step 3: to finish'
-var step3Label = Ti.UI.createLabel({
-	text:'Step 3: to finish', 
-	color: '#000000',
-	font:{fontSize:17},
-	height:'auto',
-	width:'auto',
-	left:475,
-	top:440
-});
-//add label to window
-winIPAD.add(step3Label);
-
+var adjustPositioning = 12;
+var adjustPositioning2 = 9
 
 //Label for 'Repeat Game:'
 var basicPlayLabel = Ti.UI.createLabel({
@@ -260,7 +131,7 @@ var basicPlayLabel = Ti.UI.createLabel({
 	height:'auto',
 	width:'auto',
 	left:140,
-	top:567
+	top:567+adjustPositioning2
 });
 //add label to window
 winIPAD.add(basicPlayLabel);
@@ -275,7 +146,7 @@ var rewardScreenLabel = Ti.UI.createLabel({
 	height:'auto',
 	width:'auto',
 	left:140,
-	top:647
+	top:647+adjustPositioning2
 });
 //add label to window
 winIPAD.add(rewardScreenLabel);
@@ -290,7 +161,7 @@ var practiceLabel = Ti.UI.createLabel({
 	height:'auto',
 	width:'auto',
 	left:340,
-	top:567
+	top:567+adjustPositioning2
 });
 //add label to window
 winIPAD.add(practiceLabel);
@@ -305,7 +176,7 @@ var textLabel = Ti.UI.createLabel({
 	height:'auto',
 	width:'auto',
 	left:340,
-	top:647
+	top:647+adjustPositioning2
 });
 //add label to window
 winIPAD.add(textLabel);
@@ -319,7 +190,7 @@ var videoLabel = Ti.UI.createLabel({
 	height:'auto',
 	width:'auto',
 	left:540,
-	top:647
+	top:647+adjustPositioning2
 });
 //add label to window
 winIPAD.add(videoLabel);
@@ -334,7 +205,7 @@ var roundsperGameLabel = Ti.UI.createLabel({
 	height:'auto',
 	width:'auto',
 	left:540,
-	top:567
+	top:567+adjustPositioning2
 });
 //add label to window
 winIPAD.add(roundsperGameLabel);
@@ -350,7 +221,7 @@ var b1 = Ti.UI.createButton({
 	title:'Play Game',
 	width:155,
 	height:50,
-	top:650,
+	top:650+adjustPositioning,
 	right:125
 });
 //Adds click functionality to the play game function 
@@ -430,9 +301,6 @@ winIPAD.add(b3);
 	//for rounds per game radio buttons
 	var radioButtonRPG	= require('ui/CustomRadioButtonClasses/tiRadioButtonRPG');
 
-	//for before/earlier radio buttons
-	var radioButtonBeforeEarlier = require('ui/CustomRadioButtonClasses/tiRadioButtonBEFOREEARLIER');
-
 	//for practice radio buttons
 	var radioButtonPractice	= require('ui/CustomRadioButtonClasses/tiRadioButtonPRACTICE');
 
@@ -444,9 +312,6 @@ winIPAD.add(b3);
 
 	//for video radio buttons
 	var radioButtonVideo = require('ui/CustomRadioButtonClasses/tiRadioButtonVIDEO');
-
-	//for Advanced radio buttons
-	var radioButtonAdvanced = require('ui/CustomRadioButtonClasses/tiRadioButtonAdvanced');
 
 
 
@@ -472,7 +337,7 @@ winIPAD.add(b3);
 				font:{fontSize:17},
 				height:'auto',
 				width:'auto',
-				top:592,
+				top:592+adjustPositioning,
 				left:181
 				});
 				var labelNoRepeatGame = Ti.UI.createLabel({
@@ -481,7 +346,7 @@ winIPAD.add(b3);
 				font:{fontSize:17},
 				height:'auto',
 				width:'auto',
-				top:592,
+				top:592+adjustPositioning,
 				left:245
 				});
 				//add label to window
@@ -509,7 +374,7 @@ winIPAD.add(b3);
 				font:{fontSize:20},
 				height:'auto',
 				width:'auto',
-				top:592,
+				top:592+adjustPositioning,
 				right:424
 				});
 				var labelRPG2 = Ti.UI.createLabel({
@@ -518,7 +383,7 @@ winIPAD.add(b3);
 				font:{fontSize:20},
 				height:'auto',
 				width:'auto',
-				top:592,
+				top:592+adjustPositioning,
 				right:381
 				});
 				var labelRPG3 = Ti.UI.createLabel({
@@ -527,7 +392,7 @@ winIPAD.add(b3);
 				font:{fontSize:20},
 				height:'auto',
 				width:'auto',
-				top:592,
+				top:592+adjustPositioning,
 				right:340
 				});
 				var labelRPG4 = Ti.UI.createLabel({
@@ -536,7 +401,7 @@ winIPAD.add(b3);
 				font:{fontSize:20},
 				height:'auto',
 				width:'auto',
-				top:592,
+				top:592+adjustPositioning,
 				right:301
 				});
 				var labelRPG5 = Ti.UI.createLabel({
@@ -545,7 +410,7 @@ winIPAD.add(b3);
 				font:{fontSize:20},
 				height:'auto',
 				width:'auto',
-				top:592,
+				top:592+adjustPositioning,
 				right:260
 				});
 				var labelRPG6 = Ti.UI.createLabel({
@@ -554,7 +419,7 @@ winIPAD.add(b3);
 				font:{fontSize:20},
 				height:'auto',
 				width:'auto',
-				top:592,
+				top:592+adjustPositioning,
 				right:217
 				});
 				var labelRPG7 = Ti.UI.createLabel({
@@ -563,7 +428,7 @@ winIPAD.add(b3);
 				font:{fontSize:20},
 				height:'auto',
 				width:'auto',
-				top:592,
+				top:592+adjustPositioning,
 				right:176
 				});
 				var labelRPG8 = Ti.UI.createLabel({
@@ -572,7 +437,7 @@ winIPAD.add(b3);
 				font:{fontSize:20},
 				height:'auto',
 				width:'auto',
-				top:592,
+				top:592+adjustPositioning,
 				right:136
 				});
 				radioGroupRoundsPerGame.addEventListener('load', function() 
@@ -729,7 +594,7 @@ winIPAD.add(b3);
 				font:{fontSize:17},
 				height:'auto',
 				width:'auto',
-				top:672,
+				top:672+adjustPositioning,
 				left:388
 				});
 				var labelNoText = Ti.UI.createLabel({
@@ -738,7 +603,7 @@ winIPAD.add(b3);
 				font:{fontSize:17},
 				height:'auto',
 				width:'auto',
-				top:672,
+				top:672+adjustPositioning,
 				left:452
 				});
 					winIPAD.add(radioGroupText);
@@ -766,7 +631,7 @@ winIPAD.add(b3);
 				font:{fontSize:17},
 				height:'auto',
 				width:'auto',
-				top:672,
+				top:672+adjustPositioning,
 				left:592
 				});
 				var labelNoVideo = Ti.UI.createLabel({
@@ -775,7 +640,7 @@ winIPAD.add(b3);
 				font:{fontSize:17},
 				height:'auto',
 				width:'auto',
-				top:672,
+				top:672+adjustPositioning,
 				left:656
 				});
 					winIPAD.add(radioGroupVideo);
@@ -803,7 +668,7 @@ winIPAD.add(b3);
 				font:{fontSize:17},
 				height:'auto',
 				width:'auto',
-				top:672,
+				top:672+adjustPositioning,
 				left:181
 				});
 				var labelNoReward = Ti.UI.createLabel({
@@ -812,7 +677,7 @@ winIPAD.add(b3);
 				font:{fontSize:17},
 				height:'auto',
 				width:'auto',
-				top:672,
+				top:672+adjustPositioning,
 				left:245
 				});
 					winIPAD.add(radioGroupRewards);
@@ -840,7 +705,7 @@ winIPAD.add(b3);
 				font:{fontSize:17},
 				height:'auto',
 				width:'auto',
-				top:592,
+				top:592+adjustPositioning,
 				left:388
 				});
 				var labelNoPractice = Ti.UI.createLabel({
@@ -849,7 +714,7 @@ winIPAD.add(b3);
 				font:{fontSize:17},
 				height:'auto',
 				width:'auto',
-				top:592,
+				top:592+adjustPositioning,
 				left:452
 				});
 					winIPAD.add(radioGroupPractice);
@@ -857,81 +722,16 @@ winIPAD.add(b3);
 					winIPAD.add(labelNoPractice);
 
 
-			//Radio Button = Before & Earlier 
-			var radioGroupBeforeEarlier = radioButtonBeforeEarlier.createGroup({
-			groupId:8,
-			width:20,
-			height:83,
-			layout:'vertical',
-			radioItemsValue:['Before', 'Earlier'],
-			radioItemsPadding:15,
-			radioItemsBackgroundSelectedImage:'images/radioButtonActive.png',
-			radioItemsBackgroundImage:'images/radioButton.png',
-			radioItemsWidth:18,
-			radioItemsHeight:19
-			});	
-			radioGroupBeforeEarlier.addEventListener('load', function() 
-			{
-
-			});
-			//Labels
-				var labelYesBeforeEarlier = Ti.UI.createLabel({
-				text:'before/after', 
-				color: '#000000',
-				font:{fontSize:17},
-				height:'auto',
-				width:'auto',
-				left:181,
-				top:406
-				});
-				var labelNoBeforeEarlier = Ti.UI.createLabel({
-				text:'earlier/later', 
-				color: '#000000',
-				font:{fontSize:17},
-				height:'auto',
-				width:'auto',
-				left:181,
-				top:440
-				});
-					winIPAD.add(radioGroupBeforeEarlier);
-					winIPAD.add(labelYesBeforeEarlier);
-					winIPAD.add(labelNoBeforeEarlier);
 
 
 
-
-				//Radio Button = Advanced
-			var radioGroupAdvanced = radioButtonAdvanced.createGroup({
-			groupId:9,
-			width:20,
-			height:83,
-			layout:'vertical',
-			radioItemsValue:['On'],
-			radioItemsPadding:15,
-			radioItemsBackgroundSelectedImage:'images/radioButtonActive.png',
-			radioItemsBackgroundImage:'images/radioButton.png',
-			radioItemsWidth:18,
-			radioItemsHeight:19
-			});	
-			radioGroupAdvanced.addEventListener('load', function() 
-			{
-
-			});
-			//Labels
-				var labelAdvanced = Ti.UI.createLabel({
-				text:'Advanced', 
-				color: '#000000',
-				font:{fontSize:17},
-				height:'auto',
-				width:'auto',
-				left:496,
-				top:376,
-				});
-					winIPAD.add(radioGroupAdvanced);
-					winIPAD.add(labelAdvanced);
 
 
  	//opens up the main/current window in viewer
 	winIPAD.open();
+	
+	//Default to Relative Time Display:
+	winRelativeIPAD.open();
+
 
 })();

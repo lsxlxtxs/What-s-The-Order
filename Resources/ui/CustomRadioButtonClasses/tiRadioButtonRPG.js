@@ -1,6 +1,6 @@
 //Parent Class for Rounds per Game Radio Buttons
 //Adapted from: https://github.com/Lukic/TiRadioButtonGroup
-
+var adjustPositioning = 12;
 
 exports.createGroup = function(arg) {
 	
@@ -12,7 +12,7 @@ exports.createGroup = function(arg) {
 		//create variable for value
 		radioItemsValue: arg.radioItemsValue,
 		layout:'horizontal',
-		top:596,
+		top:596+adjustPositioning,
 		right:129
 	});
 
@@ -39,8 +39,8 @@ exports.createGroup = function(arg) {
 		}
 		
 		//getting the id from the individual radio button
-			console.log("radioItem[id]: ");
-			console.log(radioItem.id);
+			//console.log("radioItem[id]: ");
+			//console.log(radioItem.id);
 			
   			//var radioButtonValue = radioItem.id;
 		

@@ -15,19 +15,19 @@
     </deployment-targets>
     <sdk-version>2.1.4.GA</sdk-version>
     <id>com.stetson.whatstheorder</id>
-    <name>What's The Order</name>
+    <name>What's the Order</name>
     <version>1.0</version>
-    <publisher>lseletos</publisher>
+    <publisher>Lseletos</publisher>
     <url>http://</url>
     <description>Crossplatform - Appcelerator</description>
-    <copyright>2013 by lseletos</copyright>
+    <copyright>2013 by Laura Seletos</copyright>
     <icon>applogomain.png</icon>
     <persistent-wifi>false</persistent-wifi>
     <prerendered-icon>false</prerendered-icon>
     <statusbar-style>default</statusbar-style>
-    <statusbar-hidden>false</statusbar-hidden>
-    <fullscreen>false</fullscreen>
-    <navbar-hidden>false</navbar-hidden>
+    <statusbar-hidden>true</statusbar-hidden>
+    <fullscreen>true</fullscreen>
+    <navbar-hidden>true</navbar-hidden>
     <analytics>true</analytics>
     <guid>054c1e4c-7ad0-433a-a873-79aacdbe27a9</guid>
     <property name="ti.ui.defaultunit">system</property>
@@ -45,7 +45,7 @@
     <mobileweb>
         <precache/>
         <splash>
-            <enabled>true</enabled>
+            <enabled>false</enabled>
             <inline-css-images>true</inline-css-images>
         </splash>
         <theme>default</theme>
